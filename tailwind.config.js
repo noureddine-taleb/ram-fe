@@ -1,12 +1,13 @@
 module.exports = {
   mode: "jit",
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
-  darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
-  },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
+    colors: {
+      red: "#c20831",
+      green: "#2ad4b9",
+      yellow: "#fdbc64",
+      blue: "#648cb2",
+      white: "#fff"
+    }
+  }
 }
