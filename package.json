@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@craco/craco": "^6.2.0",
     "@heroicons/react": "^1.0.3",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -19,12 +18,12 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "concurrently '$npm_execpath run watch' 'craco start'",
-    "build": "npm run watch:css && craco build",
-    "test": "craco test",
+    "start": "concurrently '$npm_execpath run watch:css' 'react-scripts start'",
+    "build": "npm run compile:css && react-scripts build",
+    "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "watch:css": "postcss src/tailwind.css -o src/index.css",
-    "watch": "chokidar './src/**/*.tsx' -c '$npm_execpath run watch:css'"
+    "compile:css": "postcss src/tailwind.css -o src/index.css",
+    "watch:css": "chokidar --initial './src/**/*.tsx' -c '$npm_execpath run compile:css'"
   },
   "eslintConfig": {
     "extends": [
