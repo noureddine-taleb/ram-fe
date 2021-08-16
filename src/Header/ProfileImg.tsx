@@ -6,7 +6,7 @@ export function ProfileImg()
 				<span>User Name</span>
 				<span>Role</span>
 			</div>
-			<img className="w-10 h-10 rounded-full bg-white" src="ram.png" alt=""/>
+			<img className="w-10 h-10 rounded-full bg-white" src="/ram.png" alt=""/>
 		</div>
 	);
 }
