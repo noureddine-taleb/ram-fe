@@ -20,13 +20,13 @@ export function NavBar()
 					{/* <Router> */}
 						{
 							navElems.map((el, i) => 
-								<li key={i} className={currentLoc == el.link ? "my-5 flex text-[#c20831]": "my-5 flex text-gray-400"}>
+								<li key={i} className={currentLoc === el.link ? "my-5 flex text-[#c20831]": "my-5 flex text-gray-400"}>
 									<Link to={el.link}>
 										<FontAwesomeIcon className="h-5 w-5 ml-28 mr-5" icon={el.icon} />
 										{el.label}
 									</Link>
 									{
-										currentLoc == el.link && <div className="bg-[#c20831] w-[5px] ml-auto"></div>
+										currentLoc === el.link && <div className="bg-[#c20831] w-[5px] ml-auto"></div>
 									}
 								</li>
 							)

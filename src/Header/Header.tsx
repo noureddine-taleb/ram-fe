@@ -5,12 +5,14 @@ import { useLocation } from "react-router";
 
 function getHeader(path: string)
 {
-	const pathParts = path.split('/')
+	// capitalise words + separator
+	const pathParts: any = path.split('/')
 	.filter(s => s)
-	.map(s => <>{s[0].toUpperCase() + s.slice(1).toLowerCase()}</>)
+	.map((s: string, i: number, arr) => <span key={i}>{s[0].toUpperCase() + s.slice(1).toLowerCase() + (i === (arr.length-1) ? '': ' > ')}</span>)
 
-	pathParts[pathParts.length - 1] = <b>{pathParts[pathParts.length - 1]}</b>
-	return pathParts.reduce((c, p) => [c, <>{' > '}</>, p] as any)
+	// make last word bold
+	pathParts[pathParts.length - 1] = <b key={pathParts.length - 1}>{pathParts[pathParts.length - 1]}</b>
+	return pathParts;
 }
 
 export function Header()
