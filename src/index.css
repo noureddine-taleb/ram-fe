@@ -429,7 +429,7 @@ textarea {
 input::placeholder,
 textarea::placeholder {
   opacity: 1;
-  color: #a1a1aa;
+  color: #9ca3af;
 }
 
 button,
@@ -542,9 +542,38 @@ video {
 [hidden] {
   display: none;
 }
+
+*, ::before, ::after {
+	--tw-border-opacity: 1;
+	border-color: rgba(229, 231, 235, var(--tw-border-opacity));
+}
+.absolute {
+	position: absolute;
+}
+.relative {
+	position: relative;
+}
+.top-2 {
+	top: 0.5rem;
+}
+.left-4 {
+	left: 1rem;
+}
 .my-5 {
 	margin-top: 1.25rem;
 	margin-bottom: 1.25rem;
+}
+.ml-4 {
+	margin-left: 1rem;
+}
+.ml-auto {
+	margin-left: auto;
+}
+.mr-4 {
+	margin-right: 1rem;
+}
+.mt-1 {
+	margin-top: 0.25rem;
 }
 .mb-5 {
 	margin-bottom: 1.25rem;
@@ -567,8 +596,14 @@ video {
 .flex {
 	display: flex;
 }
-.h-\[25\%\] {
-	height: 25%;
+.h-\[15\%\] {
+	height: 15%;
+}
+.h-10 {
+	height: 2.5rem;
+}
+.h-\[40px\] {
+	height: 40px;
 }
 .h-full {
 	height: 100%;
@@ -579,11 +614,11 @@ video {
 .h-5 {
 	height: 1.25rem;
 }
-.h-\[40px\] {
-	height: 40px;
-}
 .w-4\/5 {
 	width: 80%;
+}
+.w-10 {
+	width: 2.5rem;
 }
 .w-1\/5 {
 	width: 20%;
@@ -600,18 +635,40 @@ video {
 .w-\[150px\] {
 	width: 150px;
 }
+.appearance-none {
+	-webkit-appearance: none;
+	        appearance: none;
+}
 .flex-col {
 	flex-direction: column;
 }
 .items-center {
 	align-items: center;
 }
+.gap-8 {
+	gap: 2rem;
+}
+.gap-2 {
+	gap: 0.5rem;
+}
+.rounded-full {
+	border-radius: 9999px;
+}
+.rounded-\[20px\] {
+	border-radius: 20px;
+}
 .rounded {
 	border-radius: 0.25rem;
 }
-.bg-red {
+.border {
+	border-width: 1px;
+}
+.bg-white {
 	--tw-bg-opacity: 1;
-	background-color: rgba(194, 8, 49, var(--tw-bg-opacity));
+	background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+}
+.bg-transparent {
+	background-color: transparent;
 }
 .bg-opacity-\[\.01\] {
 	--tw-bg-opacity: .01;
@@ -626,7 +683,24 @@ video {
 .to-\[\#c20831\] {
 	--tw-gradient-to: #c20831;
 }
+.pt-5 {
+	padding-top: 1.25rem;
+}
+.pl-10 {
+	padding-left: 2.5rem;
+}
 .text-white {
 	--tw-text-opacity: 1;
 	color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+.text-gray-400 {
+	--tw-text-opacity: 1;
+	color: rgba(156, 163, 175, var(--tw-text-opacity));
+}
+.placeholder-current::placeholder {
+	color: currentColor;
+}
+.focus\:outline-none:focus {
+	outline: 2px solid transparent;
+	outline-offset: 2px;
 }
