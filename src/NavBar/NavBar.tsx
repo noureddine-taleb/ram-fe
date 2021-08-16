@@ -16,8 +16,8 @@ export function NavBar()
 			<ul className="w-full">
 				{
 					navElems.map(el => 
-						<li className="my-5 flex">
-							<FontAwesomeIcon className="h-5 w-5 ml-28 mr-5 text-gray" icon={el.icon} />
+						<li className="my-5 flex text-gray-400">
+							<FontAwesomeIcon className="h-5 w-5 ml-28 mr-5" icon={el.icon} />
 							{el.label}
 						</li>
 					)
