@@ -11,8 +11,8 @@ import { Instructors } from './Instructor/Instructors';
 import { NewInstructor } from './Instructor/NewInstructor';
 import { Users } from './User/Users';
 import { NewUser } from './User/NewUser';
-import { Formations } from './Formation/Formations';
-import { NewFormation } from './Formation/NewFormation';
+import { Trainings } from './Training/Trainings';
+import { NewTraining } from './Training/NewTraining';
 
 library.add(fas);
 
@@ -32,8 +32,8 @@ function App() {
 					<Route exact path="/dashboard/stagiaire/ajouter-stagiaire" component={NewIntern}/>
 					<Route exact path="/dashboard/instructeur" component={Instructors}/>
 					<Route exact path="/dashboard/instructeur/ajouter-instructeur" component={NewInstructor}/>
-					<Route exact path="/dashboard/formation" component={Formations}/>
-					<Route exact path="/dashboard/formation/ajouter-formation" component={NewFormation}/>
+					<Route exact path="/dashboard/formation" component={Trainings}/>
+					<Route exact path="/dashboard/formation/ajouter-formation" component={NewTraining}/>
 					<Route exact path="/dashboard/utilisateur" component={Users}/>
 					<Route exact path="/dashboard/utilisateur/ajouter-utilisateur" component={NewUser}/>
 				</Switch>
