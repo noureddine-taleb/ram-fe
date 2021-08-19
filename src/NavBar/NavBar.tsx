@@ -14,7 +14,7 @@ export function NavBar()
 	const currentLoc = useLocation().pathname;
 
 	return (
-		<div className="w-1/5 h-full flex items-center flex-col bg-red bg-opacity-[.01]">
+		<div className="w-1/5 h-full flex items-center flex-col bg-[#FFFCFC]">
 			<img src="/ram.png" alt="ram" className="w-1/3 h-20 my-5"/>
 				<ul className="w-full">
 					{/* <Router> */}
