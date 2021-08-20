@@ -1,8 +1,6 @@
 import './App.css';
 import { NavBar } from './NavBar/NavBar';
 import { Header } from './Header/Header';
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fas } from '@fortawesome/free-solid-svg-icons'
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import { Dashboard } from './Dashboard/Dashboard';
 import { Interns } from './Intern/Interns';
@@ -13,8 +11,6 @@ import { Users } from './User/Users';
 import { NewUser } from './User/NewUser';
 import { Trainings } from './Training/Trainings';
 import { NewTraining } from './Training/NewTraining';
-
-library.add(fas);
 
 function App() {
 	return (
