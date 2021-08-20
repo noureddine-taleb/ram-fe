@@ -1,4 +1,6 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { IconElearn } from "../Icons/IconElearn";
+import { IconInstructor } from "../Icons/IconInstructor";
+import { IconStudent } from "../Icons/IconStudent";
 import { SectionTitle } from "./SectionTitle";
 import { ShowMoreActivities } from "./ShowMoreActivities";
 import { ShowMoreTrainings } from "./ShowMoreTrainings";
@@ -25,11 +27,11 @@ export function Dashboard()
 	return (
 		<div className="relative px-7">
 			<div className="flex justify-between relative top-[-30px]">
-				<StatCard title="Stagiaire" icon={<FontAwesomeIcon icon="user-graduate"/>}
+				<StatCard title="Stagiaire" icon={<IconStudent />}
 						count={92} scheme={{ bg: "bg-purple-500 bg-opacity-[10%]", text: "text-purple-800" }}></StatCard>
-				<StatCard title="Instructeur" icon={<FontAwesomeIcon icon="chalkboard-teacher"/>}
+				<StatCard title="Instructeur" icon={<IconInstructor />}
 						count={23} scheme={{ bg: "bg-green-500 bg-opacity-[10%]", text: "text-green-400" }}></StatCard>
-				<StatCard title="Formation" icon={<FontAwesomeIcon icon="tablet"/>}
+				<StatCard title="Formation" icon={<IconElearn />}
 						count={33} scheme={{ bg: "bg-yellow-500 bg-opacity-[10%]", text: "text-yellow-400" }}></StatCard>
 			</div>
 			

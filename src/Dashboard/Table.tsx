@@ -1,4 +1,4 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { IconEye } from "../Icons/IconEye";
 
 export function Table({head, data}: {head: string[], data: string[][]})
 {
@@ -22,8 +22,8 @@ export function Table({head, data}: {head: string[], data: string[][]})
 										{ r.map(d => <td>{d}</td>) }
 										{ 
 											<td className="flex justify-center my-3">
-												<div className="w-[28px] h-[28px] bg-green-400 text-white rounded-md flex items-center justify-center" >
-													<FontAwesomeIcon icon="eye"/>
+												<div className="w-[28px] h-[28px] bg-[#2AD4B9] text-white rounded-md flex items-center justify-center px-1" >
+													<IconEye/>
 												</div>
 											</td> 
 										}

@@ -1,4 +1,4 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { IconArrow } from "../Icons/IconArrow";
 
 export function ShowMoreActivities()
 {
@@ -7,7 +7,7 @@ export function ShowMoreActivities()
 			<h2>
 				More Activity 
 			</h2>
-			<FontAwesomeIcon icon="arrow-right" className="text-[#B23939] ml-1.5"></FontAwesomeIcon>
+			<IconArrow className="ml-1.5 text-[#B23939] h-3"></IconArrow>
 		</div>
 	);
 }

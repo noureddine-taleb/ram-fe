@@ -1,7 +1,7 @@
 import {SearchBar} from "./SearchBar";
 import {ProfileImg} from "./ProfileImg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useLocation } from "react-router";
+import { IconBell } from "../Icons/IconBell";
 
 function getHeader(path: string)
 {
@@ -24,7 +24,7 @@ export function Header()
 			<div className="ml-4 font-sans text-lg">{getHeader(currentLoc)}</div>
 			<div className="ml-auto flex items-center gap-8 mr-4">
 				<SearchBar/>
-				<FontAwesomeIcon className="mt-1" icon="bell"/>
+				<IconBell className="mt-1 w-6 h-7" notificationAvailable={true}></IconBell>
 				<span>|</span>
 				<ProfileImg/>
 			</div>

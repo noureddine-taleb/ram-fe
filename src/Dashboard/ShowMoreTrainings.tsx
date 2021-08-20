@@ -1,10 +1,10 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { IconArrow } from "../Icons/IconArrow";
 
 export function ShowMoreTrainings()
 {
 	return (
 			<div className="w-28 h-44 flex flex-col bg-[#FCEFEF] rounded-lg justify-center items-center text-lg font-medium">
-				<FontAwesomeIcon icon="arrow-right" className="text-[#C40B33] text-xl"></FontAwesomeIcon>
+				<IconArrow className="h-4 text-[#C40B33] text-xl"></IconArrow>
 				<span>Voir Plus</span>
 			</div>
 	);
