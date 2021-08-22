@@ -21,18 +21,20 @@ function App() {
 				<Header/>
 
 				{/* dynamic content */}
-				<Switch>
-					<Route exact path="/" render={() => <Redirect to="/dashboard"/>}/>					
-					<Route exact path="/dashboard" component={Dashboard}/>
-					<Route exact path="/dashboard/stagiaire" component={Interns}/>
-					<Route exact path="/dashboard/stagiaire/ajouter-stagiaire" component={NewIntern}/>
-					<Route exact path="/dashboard/instructeur" component={Instructors}/>
-					<Route exact path="/dashboard/instructeur/ajouter-instructeur" component={NewInstructor}/>
-					<Route exact path="/dashboard/formation" component={Trainings}/>
-					<Route exact path="/dashboard/formation/ajouter-formation" component={NewTraining}/>
-					<Route exact path="/dashboard/utilisateur" component={Users}/>
-					<Route exact path="/dashboard/utilisateur/ajouter-utilisateur" component={NewUser}/>
-				</Switch>
+				<div className="relative px-7 top-[-30px]">
+					<Switch>
+						<Route exact path="/" render={() => <Redirect to="/dashboard"/>}/>					
+						<Route exact path="/dashboard" component={Dashboard}/>
+						<Route exact path="/dashboard/stagiaire" component={Interns}/>
+						<Route exact path="/dashboard/stagiaire/ajouter-stagiaire" component={NewIntern}/>
+						<Route exact path="/dashboard/instructeur" component={Instructors}/>
+						<Route exact path="/dashboard/instructeur/ajouter-instructeur" component={NewInstructor}/>
+						<Route exact path="/dashboard/formation" component={Trainings}/>
+						<Route exact path="/dashboard/formation/ajouter-formation" component={NewTraining}/>
+						<Route exact path="/dashboard/utilisateur" component={Users}/>
+						<Route exact path="/dashboard/utilisateur/ajouter-utilisateur" component={NewUser}/>
+					</Switch>
+				</div>
 			</Router>
 		</div>
 	);

@@ -25,8 +25,8 @@ export function Dashboard()
 		] };
 
 	return (
-		<div className="relative px-7">
-			<div className="flex justify-between relative top-[-30px]">
+		<div>
+			<div className="flex justify-between">
 				<StatCard title="Stagiaire" icon={<IconStudent />}
 						count={92} scheme={{ bg: "bg-purple-500 bg-opacity-[10%]", text: "text-purple-800" }}></StatCard>
 				<StatCard title="Instructeur" icon={<IconInstructor />}
