@@ -21,7 +21,7 @@ function App() {
 				<Header/>
 
 				{/* dynamic content */}
-				<div className="relative px-7 top-[-30px]">
+				<div className="relative px-7 top-[-30px] h-[85%] overflow-auto">
 					<Switch>
 						<Route exact path="/" render={() => <Redirect to="/dashboard"/>}/>					
 						<Route exact path="/dashboard" component={Dashboard}/>
