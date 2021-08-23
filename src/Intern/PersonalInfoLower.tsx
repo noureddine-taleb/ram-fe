@@ -1,11 +1,7 @@
 import React from "react";
-import { IconImg } from "../Icons/IconImg";
 import { Button } from "./Button";
-import { CheckboxInput } from "./CheckboxInput";
 import { DateInput } from "./DateInput";
 import { Header } from "./Header";
-import { ListInput } from "./ListInput";
-import { TextArea } from "./TextArea";
 import { TextInput } from "./TextInput";
 
 export function PersonalInfoLower()
@@ -17,7 +13,7 @@ export function PersonalInfoLower()
 					<div className="flex flex-wrap flex-col justify-between gap-y-5">
 						<div className="flex w-full gap-x-4">
 							<TextInput className="w-full" id="f1" name="f1" label="N°" placeholder="ipsum"></TextInput>
-							<TextInput className="w-full" id="f2" name="f2" label="Livré par" placeholder="ipsum"></TextInput>
+							<TextInput className="w-full" id="f2a" name="f2a" label="Livré par" placeholder="ipsum"></TextInput>
 							<DateInput className="w-full" id="f3" name="f3" label="Livré le" placeholder="ipsum"></DateInput>
 						</div>
 						<div className="flex gap-x-4 h-14">

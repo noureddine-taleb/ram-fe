@@ -10,8 +10,8 @@ export function ListInput({name, id, label, placeholder, className, data}: {name
 				</div>
 				<select className="pl-2 w-full bg-white hover:outline-none shadow-md rounded appearance-none h-8 text-xs" id={id} name={name} placeholder={placeholder}>
 					{
-						data.map(option => (
-								<option value={option.value}>{option.label}</option>
+						data.map((option, i) => (
+								<option key={i} value={option.value}>{option.label}</option>
 							)
 						)
 					}

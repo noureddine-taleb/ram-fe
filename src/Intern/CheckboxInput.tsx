@@ -6,7 +6,7 @@ export function CheckboxInput({name, ids, label, values, className}: {name: stri
 				{
 					values.map((v, i) => {
 						return (
-							<div className="flex pl-2 shadow-md rounded appearance-none h-8 bg-white items-center px-5 gap-2 w-1/2">
+							<div key={i} className="flex pl-2 shadow-md rounded appearance-none h-8 bg-white items-center px-5 gap-2 w-1/2">
 								<input type="radio" name={name} value={v} id={ids[i]}></input>
 								<label className="text-xs" htmlFor={ids[i]}>{v}</label>
 							</div>

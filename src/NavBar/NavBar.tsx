@@ -5,7 +5,6 @@ import { IconLogout } from "../Icons/IconLogout";
 import { IconInstructor } from "../Icons/IconInstructor";
 import { IconStudent } from "../Icons/IconStudent";
 import { IconUsers } from "../Icons/IconUsers";
-import { IconSearch } from "../Icons/IconSearch";
 
 function urlMatches(url: string, currentUrl: string)
 {

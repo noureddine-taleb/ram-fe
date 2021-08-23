@@ -1,5 +1,4 @@
 import React from "react";
-import { IconDropDown } from "../Icons/IconDropDown";
 
 export function NumberInput({name, id, label, placeholder, className}: {name: string, id: string, label: string, placeholder: string, className?: string}) {
 	return (

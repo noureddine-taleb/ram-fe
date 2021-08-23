@@ -1,5 +1,4 @@
 import React from "react";
-import { IconImg } from "../Icons/IconImg";
 import { Button } from "./Button";
 import { CheckboxInput } from "./CheckboxInput";
 import { DateInput } from "./DateInput";
@@ -23,19 +22,19 @@ export function PersonalInfoUpper()
 				<UploadImg></UploadImg>
 				<div className="flex w-5/6 flex-wrap flex-col justify-between">
 					<div className="flex w-full gap-x-4">
-						<TextInput className="w-full" id="f1" name="f1" label="Nom" placeholder="ipsum"></TextInput>
+						<TextInput className="w-full" id="f1c" name="f1c" label="Nom" placeholder="ipsum"></TextInput>
 						<TextInput className="w-full" id="f2" name="f2" label="Prénom" placeholder="ipsum"></TextInput>
 						<DateInput className="w-full" id="f3" name="f3" label="Date de Naissnance" placeholder="ipsum"></DateInput>
 					</div>
 					<div className="flex w-full gap-x-4">
 						<ListInput className="w-full" id="f4" name="f4" label="Lieu de Naissance" placeholder="ipsum" data={data}></ListInput>
-						<TextInput className="w-full" id="f5" name="f5" label="Nationnalité" placeholder="lorem"></TextInput>
+						<TextInput className="w-full" id="f5a" name="f5a" label="Nationnalité" placeholder="lorem"></TextInput>
 						<CheckboxInput className="w-full" ids={["f6", "f7"]} name="f6" label="Sexe" values={["Masculin", "Féminin"]}></CheckboxInput>
 					</div>
 					<div className="flex w-full gap-x-4">
 						<TextArea className="w-2/3 h-32" id="f8" name="f8" label="Adresse" placeholder="ipsum"></TextArea>
 						<div className="flex flex-col w-1/3 gap-y-4">
-							<TextInput className="w-full" id="f5" name="f5" label="N°GSM 1" placeholder="+123"></TextInput>
+							<TextInput className="w-full" id="f5b" name="f5b" label="N°GSM 1" placeholder="+123"></TextInput>
 							<TextInput className="w-full" id="f5" name="f5" label="N°GSM 2" placeholder="+123"></TextInput>
 						</div>
 					</div>

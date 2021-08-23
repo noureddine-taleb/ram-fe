@@ -54,7 +54,7 @@ export function Interns() {
 						<thead className="border-b-[1px] border-[#7D001C]">
 							<tr className="font-bold text-sm leading-5 text-[#7D001C]">
 								{
-									head.map(h => <th className="h-14">{h}</th>)
+									head.map((h, i) => <th key={i} className="h-14">{h}</th>)
 								}
 								{
 									<th className="h-14">Action</th>
@@ -63,9 +63,9 @@ export function Interns() {
 						</thead>
 						<tbody className="font-normal text-xs not-italic text-center">
 							{
-								data.map(r =>
-									<tr>
-										{r.map(d => <td>{d}</td>)}
+								data.map((r, i) =>
+									<tr key={i}>
+										{r.map((d, i) => <td key={i}>{d}</td>)}
 										{
 											<td className="flex justify-center my-3 gap-1">
 												<button className="w-[28px] h-[28px] bg-[#2AD4B9] text-white rounded-md flex items-center justify-center px-1" >

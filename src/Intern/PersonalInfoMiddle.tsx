@@ -1,5 +1,4 @@
 import React from "react";
-import { IconImg } from "../Icons/IconImg";
 import { CheckboxInput } from "./CheckboxInput";
 import { DateInput } from "./DateInput";
 import { ListInput } from "./ListInput";
@@ -19,10 +18,10 @@ export function PersonalInfoMiddle()
 		<div className="flex flex-col px-10 py-5 bg-[#F7FAFC] rounded-lg shadow-md mb-5">
 				<div className="flex flex-wrap flex-col justify-between gap-y-5">
 					<div className="flex w-full gap-x-4">
-						<TextInput className="w-full" id="f1" name="f1" label="Matricule" placeholder="ipsum"></TextInput>
-						<TextInput className="w-full" id="f2" name="f2" label="N°Passeport" placeholder="ipsum"></TextInput>
+						<TextInput className="w-full" id="f1d" name="f1d" label="Matricule" placeholder="ipsum"></TextInput>
+						<TextInput className="w-full" id="f2n" name="f2n" label="N°Passeport" placeholder="ipsum"></TextInput>
 						<DateInput className="w-full" id="f3" name="f3" label="Date de Validité" placeholder="ipsum"></DateInput>
-						<TextInput className="w-full" id="f2" name="f2" label="Email" placeholder="Ipsum@gmail.com"></TextInput>
+						<TextInput className="w-full" id="f2k" name="f2k" label="Email" placeholder="Ipsum@gmail.com"></TextInput>
 					</div>
 					<div className="flex w-full gap-x-4">
 						<ListInput className="w-full" id="f4" name="f4" label="Fonction" placeholder="ipsum" data={data}></ListInput>
@@ -32,7 +31,7 @@ export function PersonalInfoMiddle()
 					</div>
 					<div className="flex w-full gap-x-4">
 						<DateInput className="w-full" id="f3" name="f3" label="Date de visite médicale" placeholder="ipsum"></DateInput>
-						<TextInput className="w-full" id="f2" name="f2" label="Durée de VM" placeholder="ipsum"></TextInput>
+						<TextInput className="w-full" id="f2y" name="f2y" label="Durée de VM" placeholder="ipsum"></TextInput>
 						<DateInput className="w-full" id="f3" name="f3" label="Date de Lâcher" placeholder="ipsum"></DateInput>
 						<NumberInput className="w-full" id="f4" name="f4" label="Séniorité" placeholder="3"></NumberInput>						
 					</div>

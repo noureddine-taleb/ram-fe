@@ -38,7 +38,7 @@ export function Dashboard()
 			<SectionTitle title="Derniers Formations"/>
 			<div className="flex justify-between">
 				{
-					trainings.map(tr => <TrainingCard {...tr}></TrainingCard>)
+					trainings.map((tr, i) => <TrainingCard key={i} {...tr}></TrainingCard>)
 				}
 				<ShowMoreTrainings/>
 			</div>
