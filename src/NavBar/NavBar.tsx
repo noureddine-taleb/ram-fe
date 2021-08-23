@@ -7,6 +7,20 @@ import { IconStudent } from "../Icons/IconStudent";
 import { IconUsers } from "../Icons/IconUsers";
 import { IconSearch } from "../Icons/IconSearch";
 
+function urlMatches(url: string, currentUrl: string)
+{
+	// remove trailing slashes
+	if (url.endsWith("/"))
+		url = url.substr(0, url.length - 1);
+	if (currentUrl.endsWith("/"))
+		currentUrl = currentUrl.substr(0, currentUrl.length - 1);
+
+	if (url.split("/").length === 2)
+		return url === currentUrl;
+	
+	return currentUrl.startsWith(url);
+}
+
 export function NavBar()
 {
 	const navElems: {icon: any, label: string, link: string}[] = [
@@ -24,13 +38,13 @@ export function NavBar()
 				<ul className="w-full">
 						{
 							navElems.map((el, i) => 
-								<li key={i} className={currentLoc === el.link ? "my-5 flex text-[#c20831]": "my-5 flex text-gray-400"}>
+								<li key={i} className={urlMatches(el.link, currentLoc) ? "my-5 flex text-[#c20831]": "my-5 flex text-gray-400"}>
 									<Link to={el.link} className="flex">
 										<el.icon className="h-5 w-5 ml-28 mr-5"/>
 										{el.label}
 									</Link>
 									{
-										currentLoc === el.link && <div className="bg-[#c20831] w-[5px] ml-auto"></div>
+										urlMatches(el.link, currentLoc) && <div className="bg-[#c20831] w-[5px] ml-auto"></div>
 									}
 								</li>
 							)
