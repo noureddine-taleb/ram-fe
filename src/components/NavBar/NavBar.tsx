@@ -5,20 +5,7 @@ import { IconLogout } from "../Icons/IconLogout";
 import { IconInstructor } from "../Icons/IconInstructor";
 import { IconStudent } from "../Icons/IconStudent";
 import { IconUsers } from "../Icons/IconUsers";
-
-function urlMatches(url: string, currentUrl: string)
-{
-	// remove trailing slashes
-	if (url.endsWith("/"))
-		url = url.substr(0, url.length - 1);
-	if (currentUrl.endsWith("/"))
-		currentUrl = currentUrl.substr(0, currentUrl.length - 1);
-
-	if (url.split("/").length === 2)
-		return url === currentUrl;
-	
-	return currentUrl.startsWith(url);
-}
+import { urlMatches } from "../../helpers/url";
 
 export function NavBar()
 {

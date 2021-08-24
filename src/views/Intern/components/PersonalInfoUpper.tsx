@@ -1,4 +1,5 @@
 import React from "react";
+import { dataList } from "../../../mocks/data";
 import { Button } from "./Button";
 import { CheckboxInput } from "./CheckboxInput";
 import { DateInput } from "./DateInput";
@@ -9,13 +10,6 @@ import { UploadImg } from "./UploadImg";
 
 export function PersonalInfoUpper()
 {
-	const data = [
-		{ value: "lorem", label: "lorem" },
-		{ value: "lorem", label: "lorem" },
-		{ value: "lorem", label: "lorem" },
-		{ value: "lorem", label: "lorem" },
-	];
-
 	return (
 		<div className="flex flex-col px-10 py-5 bg-[#F7FAFC] mb-5 rounded-b-lg shadow-md">
 			<div className="flex gap-5 w-full">
@@ -27,7 +21,7 @@ export function PersonalInfoUpper()
 						<DateInput className="w-full" id="f3" name="f3" label="Date de Naissnance" placeholder="ipsum"></DateInput>
 					</div>
 					<div className="flex w-full gap-x-4">
-						<ListInput className="w-full" id="f4" name="f4" label="Lieu de Naissance" placeholder="ipsum" data={data}></ListInput>
+						<ListInput className="w-full" id="f4" name="f4" label="Lieu de Naissance" placeholder="ipsum" data={dataList}></ListInput>
 						<TextInput className="w-full" id="f5a" name="f5a" label="Nationnalité" placeholder="lorem"></TextInput>
 						<CheckboxInput className="w-full" ids={["f6", "f7"]} name="f6" label="Sexe" values={["Masculin", "Féminin"]}></CheckboxInput>
 					</div>

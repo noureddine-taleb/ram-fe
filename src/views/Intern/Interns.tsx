@@ -5,30 +5,10 @@ import { IconPencil } from "../../components/Icons/IconPencil";
 import { IconPlus } from "../../components/Icons/IconPlus";
 import { IconPreference } from "../../components/Icons/IconPreference";
 import { IconSearch } from "../../components/Icons/IconSearch";
+import { interns } from "../../mocks/data";
 import { Pagination } from "./components/Pagination";
 
 export function Interns() {
-	const head = [
-		"lorem",
-		"lorem",
-		"lorem",
-		"lorem",
-		"lorem",
-		"lorem",
-		"lorem",
-		"lorem",
-	]
-
-	const data = [
-		["lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", <div className="flex justify-center items-center"> <button className="text-[#2AD4B9] border border-[#2AD4B9] rounded w-20 h-8 flex items-center justify-center font-bold">Validée</button></div>],
-		["lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", <div className="flex justify-center items-center"> <button className="text-[#2AD4B9] border border-[#2AD4B9] rounded w-20 h-8 flex items-center justify-center font-bold">Validée</button></div>],
-		["lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", <div className="flex justify-center items-center"> <button className="text-[#2AD4B9] border border-[#2AD4B9] rounded w-20 h-8 flex items-center justify-center font-bold">Validée</button></div>],
-		["lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", <div className="flex justify-center items-center"> <button className="text-[#2AD4B9] border border-[#2AD4B9] rounded w-20 h-8 flex items-center justify-center font-bold">Validée</button></div>],
-		["lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", <div className="flex justify-center items-center"> <button className="text-[#2AD4B9] border border-[#2AD4B9] rounded w-20 h-8 flex items-center justify-center font-bold">Validée</button></div>],
-		["lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", <div className="flex justify-center items-center"> <button className="text-[#2AD4B9] border border-[#2AD4B9] rounded w-20 h-8 flex items-center justify-center font-bold">Validée</button></div>],
-		["lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", <div className="flex justify-center items-center"> <button className="text-[#2AD4B9] border border-[#2AD4B9] rounded w-20 h-8 flex items-center justify-center font-bold">Validée</button></div>],
-	]
-
 	return (
 		<div>
 			<div className="rounded-lg overflow-hidden">
@@ -54,7 +34,7 @@ export function Interns() {
 						<thead className="border-b-[1px] border-[#7D001C]">
 							<tr className="font-bold text-sm leading-5 text-[#7D001C]">
 								{
-									head.map((h, i) => <th key={i} className="h-14">{h}</th>)
+									interns.head.map((h, i) => <th key={i} className="h-14">{h}</th>)
 								}
 								{
 									<th className="h-14">Action</th>
@@ -63,7 +43,7 @@ export function Interns() {
 						</thead>
 						<tbody className="font-normal text-xs not-italic text-center">
 							{
-								data.map((r, i) =>
+								interns.data.map((r, i) =>
 									<tr key={i}>
 										{r.map((d, i) => <td key={i}>{d}</td>)}
 										{

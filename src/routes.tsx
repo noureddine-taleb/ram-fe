@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navigate, useRoutes } from 'react-router-dom';
-import { DashboardLayout } from './layouts/dashboard';
+import { DashboardLayout } from './layouts/DashboardLayout';
 import { Dashboard } from './views/Dashboard/Dashboard';
 import { Instructors } from './views/Instructor/Instructors';
 import { NewInstructor } from './views/Instructor/NewInstructor';
