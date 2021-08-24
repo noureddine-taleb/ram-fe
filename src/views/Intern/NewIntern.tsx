@@ -1,8 +1,9 @@
-import { Header } from "./Header";
-import { PersonalInfoUpper } from "./PersonalInfoUpper";
-import { PersonalInfoMiddle } from "./PersonalInfoMiddle";
-import { PersonalInfoLower } from "./PersonalInfoLower";
-import { Button } from "./Button";
+import React from "react";
+import { Button } from "./components/Button";
+import { Header } from "./components/Header";
+import { PersonalInfoLower } from "./components/PersonalInfoLower";
+import { PersonalInfoMiddle } from "./components/PersonalInfoMiddle";
+import { PersonalInfoUpper } from "./components/PersonalInfoUpper";
 
 export function NewIntern()
 {

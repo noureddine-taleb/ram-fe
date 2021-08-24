@@ -1,11 +1,11 @@
-import { IconPlus } from "../Icons/IconPlus";
-import { IconEye } from "../Icons/IconEye";
-import { IconSearch } from "../Icons/IconSearch";
 import React from "react";
-import { IconPreference } from "../Icons/IconPreference";
-import { IconPencil } from "../Icons/IconPencil";
-import { Pagination } from "./Pagination";
 import { Link } from "react-router-dom";
+import { IconEye } from "../../components/Icons/IconEye";
+import { IconPencil } from "../../components/Icons/IconPencil";
+import { IconPlus } from "../../components/Icons/IconPlus";
+import { IconPreference } from "../../components/Icons/IconPreference";
+import { IconSearch } from "../../components/Icons/IconSearch";
+import { Pagination } from "./components/Pagination";
 
 export function Interns() {
 	const head = [

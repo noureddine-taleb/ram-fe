@@ -1,5 +1,5 @@
 import React from "react";
-import { IconImg } from "../Icons/IconImg";
+import { IconImg } from "../../../components/Icons/IconImg";
 
 export function UploadImg() {
 	return (

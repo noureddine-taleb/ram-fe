@@ -1,5 +1,6 @@
-import { IconArrow } from "../Icons/IconArrow";
-import { IconOnlineLearn } from "../Icons/IconOnlineLearn";
+import React from "react";
+import { IconArrow } from "../../../components/Icons/IconArrow";
+import { IconOnlineLearn } from "../../../components/Icons/IconOnlineLearn";
 
 export type Training = { title: string, location: string, time: string };
 export function TrainingCard(props: Training)

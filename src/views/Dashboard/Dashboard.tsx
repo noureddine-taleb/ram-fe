@@ -1,12 +1,13 @@
-import { IconElearn } from "../Icons/IconElearn";
-import { IconInstructor } from "../Icons/IconInstructor";
-import { IconStudent } from "../Icons/IconStudent";
-import { SectionTitle } from "./SectionTitle";
-import { ShowMoreActivities } from "./ShowMoreActivities";
-import { ShowMoreTrainings } from "./ShowMoreTrainings";
-import { StatCard } from "./StatCard";
-import { Table } from "./Table";
-import { TrainingCard, Training } from "./TrainingCard";
+import React from "react";
+import { IconElearn } from "../../components/Icons/IconElearn";
+import { IconInstructor } from "../../components/Icons/IconInstructor";
+import { IconStudent } from "../../components/Icons/IconStudent";
+import { SectionTitle } from "./components/SectionTitle";
+import { ShowMoreActivities } from "./components/ShowMoreActivities";
+import { ShowMoreTrainings } from "./components/ShowMoreTrainings";
+import { StatCard } from "./components/StatCard";
+import { Table } from "./components/Table";
+import { Training, TrainingCard } from "./components/TrainingCard";
 
 export function Dashboard()
 {

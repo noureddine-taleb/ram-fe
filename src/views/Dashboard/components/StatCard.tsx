@@ -1,5 +1,5 @@
-import { CSSProperties } from "react";
-import { IconEllipsis } from "../Icons/IconEllipsis";
+import React, { CSSProperties } from "react";
+import { IconEllipsis } from "../../../components/Icons/IconEllipsis";
 
 type ColorScheme = { bg: string, text: string };
 type StatCardProps = {icon: JSX.Element, title: string, count: number, scheme: ColorScheme};

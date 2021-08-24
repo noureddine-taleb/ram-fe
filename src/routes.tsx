@@ -1,15 +1,15 @@
 import React from 'react';
 import { Navigate, useRoutes } from 'react-router-dom';
-import { Dashboard } from './Dashboard/Dashboard';
-import { Instructors } from './Instructor/Instructors';
-import { NewInstructor } from './Instructor/NewInstructor';
-import { Interns } from './Intern/Interns';
-import { NewIntern } from './Intern/NewIntern';
 import { DashboardLayout } from './layouts/dashboard';
-import { NewTraining } from './Training/NewTraining';
-import { Trainings } from './Training/Trainings';
-import { NewUser } from './User/NewUser';
-import { Users } from './User/Users';
+import { Dashboard } from './views/Dashboard/Dashboard';
+import { Instructors } from './views/Instructor/Instructors';
+import { NewInstructor } from './views/Instructor/NewInstructor';
+import { Interns } from './views/Intern/Interns';
+import { NewIntern } from './views/Intern/NewIntern';
+import { NewTraining } from './views/Training/NewTraining';
+import { Trainings } from './views/Training/Trainings';
+import { NewUser } from './views/User/NewUser';
+import { Users } from './views/User/Users';
 
 export function Routes()
 {

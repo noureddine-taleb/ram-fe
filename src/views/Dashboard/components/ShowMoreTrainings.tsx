@@ -1,4 +1,5 @@
-import { IconArrow } from "../Icons/IconArrow";
+import React from "react";
+import { IconArrow } from "../../../components/Icons/IconArrow";
 
 export function ShowMoreTrainings()
 {
