@@ -15,11 +15,11 @@ export function Dashboard()
 	return (
 		<div>
 			<div className="flex justify-between">
-				<StatCard title="Stagiaire" icon={<IconStudent />}
+				<StatCard url="/dashboard/stagiaire" title="Stagiaire" icon={<IconStudent />}
 						count={92} scheme={{ bg: "bg-purple-500 bg-opacity-[10%]", text: "text-purple-800" }}></StatCard>
-				<StatCard title="Instructeur" icon={<IconInstructor />}
+				<StatCard url="/dashboard/instructeur" title="Instructeur" icon={<IconInstructor />}
 						count={23} scheme={{ bg: "bg-green-500 bg-opacity-[10%]", text: "text-green-400" }}></StatCard>
-				<StatCard title="Formation" icon={<IconElearn />}
+				<StatCard url="/dashboard/formation" title="Formation" icon={<IconElearn />}
 						count={33} scheme={{ bg: "bg-yellow-500 bg-opacity-[10%]", text: "text-yellow-400" }}></StatCard>
 			</div>
 			
