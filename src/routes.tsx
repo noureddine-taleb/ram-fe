@@ -1,6 +1,6 @@
 import { Navigate, useRoutes } from 'react-router-dom';
 import { DashboardLayout } from './layouts/DashboardLayout';
-import { DashboardRoutes } from './layouts/routes';
+import { DashboardRoutes } from './views/Dashboard/routes';
 
 export function Routes()
 {
