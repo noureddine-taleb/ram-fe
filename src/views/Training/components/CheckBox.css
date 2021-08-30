@@ -1,0 +1,16 @@
+input:checked ~ .dot {
+	left: 100%;
+	transform: translateX(-100%);
+}
+
+input:checked ~ .bar {
+	background-color: gray;
+}
+
+input:checked ~ .bar::after {
+	content: 'No';
+}
+
+input:checked ~ .bar > span {
+	display: none;
+}
