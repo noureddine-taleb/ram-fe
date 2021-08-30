@@ -35,8 +35,12 @@ export function PersonalInfoUpper()
 				</div>
 			</div>
 			<div className="flex mt-7 gap-x-4 h-14">
-				<Button className="w-1/2 h-14 bg-[#FFF9F0] text-[#E39832] border border-[#FDBC64]" label="Carton Joune"></Button>
-				<Button className="w-1/2 h-14 bg-[#EBF2F9] text-[#525F7F] border border-[#648CB2]" label="Fiche de Compétence"></Button>
+				<Button className="w-1/2 h-14 bg-[#FFF9F0] text-[#E39832] border border-[#FDBC64]">
+					Carton Joune
+				</Button>
+				<Button className="w-1/2 h-14 bg-[#EBF2F9] text-[#525F7F] border border-[#648CB2]">
+					Fiche de Compétence
+				</Button>
 			</div>
 		</div>
 	);

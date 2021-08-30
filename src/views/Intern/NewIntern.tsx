@@ -14,7 +14,7 @@ export function NewIntern()
 				<PersonalInfoUpper></PersonalInfoUpper>
 				<PersonalInfoMiddle></PersonalInfoMiddle>
 				<PersonalInfoLower></PersonalInfoLower>
-				<Button className="w-full h-14 bg-[#D7FCF6] text-[#2AD4B9] border border-[#2AE7C8]" label="Enregister"></Button>
+				<Button className="w-full h-14 bg-[#D7FCF6] text-[#2AD4B9] border border-[#2AE7C8]">Enregister</Button>
 			</div>
 		</div>
 	)

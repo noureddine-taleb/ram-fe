@@ -17,8 +17,12 @@ export function PersonalInfoLower()
 							<DateInput className="w-full" id="f3" name="f3" label="Livré le" placeholder="ipsum"></DateInput>
 						</div>
 						<div className="flex gap-x-4 h-14">
-							<Button className="w-1/2 bg-[#FFE2E2] text-[#EF9797] border border-[#EB8383]" label="Afficher License"></Button>
-							<Button className="w-1/2 bg-[#EBF2F9] text-[#6F7994] border border-[#648CB2]" label="Charger License"></Button>
+							<Button className="w-1/2 bg-[#FFE2E2] text-[#EF9797] border border-[#EB8383]">
+								Afficher License
+							</Button>
+							<Button className="w-1/2 bg-[#EBF2F9] text-[#6F7994] border border-[#648CB2]">
+								Charger License
+							</Button>
 						</div>
 					</div>
 			</div>
