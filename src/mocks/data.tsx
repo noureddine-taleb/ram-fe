@@ -34,6 +34,28 @@ export const interns = {
 	]
 };
 
+export const trainings = {
+	head: [
+		"lorem",
+		"lorem",
+		"lorem",
+		"lorem",
+		"lorem",
+		"lorem",
+		"lorem",
+		"lorem",
+	],
+	data: [
+		["lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem"],
+		["lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem"],
+		["lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem"],
+		["lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem"],
+		["lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem"],
+		["lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem"],
+		["lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem"],
+	]
+};
+
 export const dataList = [
 	{ value: "lorem", label: "lorem" },
 	{ value: "lorem", label: "lorem" },
