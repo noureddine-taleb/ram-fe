@@ -5,6 +5,7 @@ import { DateInput } from "components/DateInput";
 import { ListInput } from "components/ListInput";
 import { NumberInput } from "components/NumberInput";
 import { TextInput } from "components/TextInput";
+import { ListInputSave } from "components/ListInputSave";
 
 export function PersonalInfoMiddle()
 {
@@ -21,13 +22,16 @@ export function PersonalInfoMiddle()
 						<ListInput className="w-full" id="f4" name="f4" label="Fonction" placeholder="ipsum" data={dataList}></ListInput>
 						<DateInput className="w-full" id="f3" name="f3" label="Date d’entrée a la Compagnie" placeholder="ipsum"></DateInput>
 						<CheckboxInput className="w-full" ids={["f9", "f10"]} name="f9" label="Situation Familiale" values={["Célibataire", "Mariée"]}></CheckboxInput>
-						<ListInput className="w-full" id="f4" name="f4" label="Secteur Vol" placeholder="B744" data={dataList}></ListInput>
 					</div>
 					<div className="flex w-full gap-x-4">
+						<ListInput className="w-full" id="f4" name="f4" label="Secteur Vol" placeholder="B744" data={dataList}></ListInput>
 						<DateInput className="w-full" id="f3" name="f3" label="Date de visite médicale" placeholder="ipsum"></DateInput>
 						<TextInput className="w-full" id="f2y" name="f2y" label="Durée de VM" placeholder="ipsum"></TextInput>
+					</div>
+					<div className="flex w-full gap-x-4">
 						<DateInput className="w-full" id="f3" name="f3" label="Date de Lâcher" placeholder="ipsum"></DateInput>
 						<NumberInput className="w-full" id="f4" name="f4" label="Séniorité" placeholder="3"></NumberInput>						
+						<ListInputSave className="w-full" id="f4" name="f4" label="Roles" placeholder="ipsum" data={dataList}></ListInputSave>
 					</div>
 				</div>
 		</div>

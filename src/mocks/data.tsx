@@ -36,7 +36,7 @@ export const dummyTable = {
 
 export const dataList = [
 	{ value: "lorem", label: "lorem" },
-	{ value: "lorem", label: "lorem" },
-	{ value: "lorem", label: "lorem" },
-	{ value: "lorem", label: "lorem" },
+	{ value: "lorem2", label: "lorem2" },
+	{ value: "lorem3", label: "lorem3" },
+	{ value: "lorem4", label: "lorem4" },
 ];
