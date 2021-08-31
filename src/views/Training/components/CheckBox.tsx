@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import "./CheckBox.css"
 
 export function CheckBox({label, className}: {label: string, className: string})

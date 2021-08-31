@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { IconEye } from "../../components/Icons/IconEye";
-import { IconPencil } from "../../components/Icons/IconPencil";
-import { IconPlus } from "../../components/Icons/IconPlus";
-import { IconPreference } from "../../components/Icons/IconPreference";
-import { IconSearch } from "../../components/Icons/IconSearch";
-import { dummyTable } from "../../mocks/data";
-import { Pagination } from "../../components/Pagination";
-import { ValidateButton } from "../../components/ValidateButton";
-import { ButtonIcon } from "../../components/ButtonIcon";
+import { IconEye } from "components/Icons/IconEye";
+import { IconPencil } from "components/Icons/IconPencil";
+import { IconPlus } from "components/Icons/IconPlus";
+import { IconPreference } from "components/Icons/IconPreference";
+import { IconSearch } from "components/Icons/IconSearch";
+import { dummyTable } from "mocks/data";
+import { Pagination } from "components/Pagination";
+import { ValidateButton } from "components/ValidateButton";
+import { ButtonIcon } from "components/ButtonIcon";
 
 export function Interns() {
 	return (

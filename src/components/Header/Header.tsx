@@ -1,8 +1,8 @@
-import {SearchBar} from "./SearchBar";
-import {ProfileImg} from "./ProfileImg";
+import {SearchBar} from "components/Header/SearchBar";
+import {ProfileImg} from "components/Header/ProfileImg";
 import { useLocation } from "react-router";
-import { IconBell } from "../Icons/IconBell";
-import { getHeader } from "../../helpers/url";
+import { IconBell } from "components/Icons/IconBell";
+import { getHeader } from "helpers/url";
 
 export function Header()
 {

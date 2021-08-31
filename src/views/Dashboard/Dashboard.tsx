@@ -1,8 +1,8 @@
 import React from "react";
-import { IconElearn } from "../../components/Icons/IconElearn";
-import { IconInstructor } from "../../components/Icons/IconInstructor";
-import { IconStudent } from "../../components/Icons/IconStudent";
-import { lastCreatedInterns, lastTrainings } from "../../mocks/data";
+import { IconElearn } from "components/Icons/IconElearn";
+import { IconInstructor } from "components/Icons/IconInstructor";
+import { IconStudent } from "components/Icons/IconStudent";
+import { lastCreatedInterns, lastTrainings } from "mocks/data";
 import { SectionTitle } from "./components/SectionTitle";
 import { ShowMoreActivities } from "./components/ShowMoreActivities";
 import { ShowMoreTrainings } from "./components/ShowMoreTrainings";

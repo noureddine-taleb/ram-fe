@@ -1,5 +1,5 @@
 import React from "react";
-import { IconDropDown } from "../../../components/Icons/IconDropDown";
+import { IconDropDown } from "components/Icons/IconDropDown";
 
 export function ListInput({name, id, label, placeholder, className, data}: {name: string, id: string, label: string, placeholder: string, className?: string, data: { value: string, label: string }[] }) {
 	return (

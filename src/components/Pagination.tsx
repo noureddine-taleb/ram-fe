@@ -1,6 +1,6 @@
 import React from "react";
-import { IconNext } from "./Icons/IconNext";
-import { IconPrev } from "./Icons/IconPrev";
+import { IconNext } from "components/Icons/IconNext";
+import { IconPrev } from "components/Icons/IconPrev";
 
 
 export function Pagination() {

@@ -1,13 +1,13 @@
 import React from "react";
-import { IconEye } from "../../components/Icons/IconEye";
-import { IconImg } from "../../components/Icons/IconImg";
-import { dataList } from "../../mocks/data";
-import { Button } from "../Intern/components/Button";
-import { DateInput } from "../Intern/components/DateInput";
-import { Header } from "../Intern/components/Header";
-import { ListInput } from "../Intern/components/ListInput";
-import { NumberInput } from "../Intern/components/NumberInput";
-import { TextInput } from "../Intern/components/TextInput";
+import { IconEye } from "components/Icons/IconEye";
+import { IconImg } from "components/Icons/IconImg";
+import { dataList } from "mocks/data";
+import { Button } from "components/Button";
+import { DateInput } from "components/DateInput";
+import { Header } from "components/Header";
+import { ListInput } from "components/ListInput";
+import { NumberInput } from "components/NumberInput";
+import { TextInput } from "components/TextInput";
 import { CheckBox } from "./components/CheckBox";
 
 export function CoursPlan()

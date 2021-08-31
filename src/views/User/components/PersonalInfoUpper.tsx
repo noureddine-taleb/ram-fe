@@ -6,7 +6,7 @@ import { DateInput } from "components/DateInput";
 import { ListInput } from "components/ListInput";
 import { TextArea } from "components/TextArea";
 import { TextInput } from "components/TextInput";
-import { UploadImg } from "./UploadImg";
+import { UploadImg } from "components/UploadImg";
 
 export function PersonalInfoUpper()
 {

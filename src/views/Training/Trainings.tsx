@@ -1,15 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { IconDiploma } from "../../components/Icons/IconDiploma";
-import { IconDiplomaStack } from "../../components/Icons/IconDiplomaStack";
-import { IconPencil } from "../../components/Icons/IconPencil";
-import { IconPlus } from "../../components/Icons/IconPlus";
-import { IconPreference } from "../../components/Icons/IconPreference";
-import { IconSearch } from "../../components/Icons/IconSearch";
-import { dummyTable } from "../../mocks/data";
-import { Pagination } from "../../components/Pagination";
+import { IconDiploma } from "components/Icons/IconDiploma";
+import { IconDiplomaStack } from "components/Icons/IconDiplomaStack";
+import { IconPencil } from "components/Icons/IconPencil";
+import { IconPlus } from "components/Icons/IconPlus";
+import { IconPreference } from "components/Icons/IconPreference";
+import { IconSearch } from "components/Icons/IconSearch";
+import { dummyTable } from "mocks/data";
+import { Pagination } from "components/Pagination";
 import { NavCard } from "./components/NavCard";
-import { ButtonIcon } from "../../components/ButtonIcon";
+import { ButtonIcon } from "components/ButtonIcon";
 
 export function Trainings()
 {

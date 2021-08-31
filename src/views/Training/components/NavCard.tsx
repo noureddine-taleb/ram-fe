@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { removeTrailingSlash } from "../../../helpers/url";
+import { removeTrailingSlash } from "helpers/url";
 
 type ColorScheme = { bg: string, text: string };
 type StatCardProps = {icon: JSX.Element, title: string, scheme: ColorScheme, url: string};

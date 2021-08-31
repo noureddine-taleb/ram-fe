@@ -1,13 +1,13 @@
 import React from "react";
-import { ButtonIcon } from "../../components/ButtonIcon";
-import { IconBracket } from "../../components/Icons/IconBracket";
-import { IconSearch } from "../../components/Icons/IconSearch";
-import { dummyTable } from "../../mocks/data";
-import { Button } from "../Intern/components/Button";
-import { DateInput } from "../Intern/components/DateInput";
-import { Header } from "../Intern/components/Header";
-import { TextArea } from "../Intern/components/TextArea";
-import { TextInput } from "../Intern/components/TextInput";
+import { ButtonIcon } from "components/ButtonIcon";
+import { IconBracket } from "components/Icons/IconBracket";
+import { IconSearch } from "components/Icons/IconSearch";
+import { dummyTable } from "mocks/data";
+import { Button } from "components/Button";
+import { DateInput } from "components/DateInput";
+import { Header } from "components/Header";
+import { TextArea } from "components/TextArea";
+import { TextInput } from "components/TextInput";
 
 export function CoursEval() {
 	return (
