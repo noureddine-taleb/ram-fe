@@ -3,17 +3,11 @@ import { IconEye } from "../../components/Icons/IconEye";
 import { IconImg } from "../../components/Icons/IconImg";
 import { dataList } from "../../mocks/data";
 import { Button } from "../Intern/components/Button";
-import { CheckboxInput } from "../Intern/components/CheckboxInput";
 import { DateInput } from "../Intern/components/DateInput";
 import { Header } from "../Intern/components/Header";
 import { ListInput } from "../Intern/components/ListInput";
 import { NumberInput } from "../Intern/components/NumberInput";
-import { PersonalInfoLower } from "../Intern/components/PersonalInfoLower";
-import { PersonalInfoMiddle } from "../Intern/components/PersonalInfoMiddle";
-import { PersonalInfoUpper } from "../Intern/components/PersonalInfoUpper";
-import { TextArea } from "../Intern/components/TextArea";
 import { TextInput } from "../Intern/components/TextInput";
-import { UploadImg } from "../Intern/components/UploadImg";
 import { CheckBox } from "./components/CheckBox";
 
 export function CoursPlan()

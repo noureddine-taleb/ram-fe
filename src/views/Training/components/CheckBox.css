@@ -1,14 +1,13 @@
 input:checked ~ .dot {
-	left: 100%;
-	transform: translateX(-100%);
+	transform: translateX(300%);
 }
 
 input:checked ~ .bar {
-	background-color: gray;
+    background-color: rgba(16, 185, 129, 1);
 }
 
 input:checked ~ .bar::after {
-	content: 'No';
+	content: 'Oui';
 }
 
 input:checked ~ .bar > span {

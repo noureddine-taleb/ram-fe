@@ -12,29 +12,7 @@ export const lastCreatedInterns = {
 		["lorem ipsum", "lorem ipsum", "lorem ipsum"]
 ]};
 
-export const interns = {
-	head: [
-		"lorem",
-		"lorem",
-		"lorem",
-		"lorem",
-		"lorem",
-		"lorem",
-		"lorem",
-		"lorem",
-	],
-	data: [
-		["lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", <div className="flex justify-center items-center"> <button className="text-[#2AD4B9] border border-[#2AD4B9] rounded w-20 h-8 flex items-center justify-center font-bold">Validée</button></div>],
-		["lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", <div className="flex justify-center items-center"> <button className="text-[#2AD4B9] border border-[#2AD4B9] rounded w-20 h-8 flex items-center justify-center font-bold">Validée</button></div>],
-		["lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", <div className="flex justify-center items-center"> <button className="text-[#2AD4B9] border border-[#2AD4B9] rounded w-20 h-8 flex items-center justify-center font-bold">Validée</button></div>],
-		["lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", <div className="flex justify-center items-center"> <button className="text-[#2AD4B9] border border-[#2AD4B9] rounded w-20 h-8 flex items-center justify-center font-bold">Validée</button></div>],
-		["lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", <div className="flex justify-center items-center"> <button className="text-[#2AD4B9] border border-[#2AD4B9] rounded w-20 h-8 flex items-center justify-center font-bold">Validée</button></div>],
-		["lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", <div className="flex justify-center items-center"> <button className="text-[#2AD4B9] border border-[#2AD4B9] rounded w-20 h-8 flex items-center justify-center font-bold">Validée</button></div>],
-		["lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", <div className="flex justify-center items-center"> <button className="text-[#2AD4B9] border border-[#2AD4B9] rounded w-20 h-8 flex items-center justify-center font-bold">Validée</button></div>],
-	]
-};
-
-export const trainings = {
+export const dummyTable = {
 	head: [
 		"lorem",
 		"lorem",
