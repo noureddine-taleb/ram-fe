@@ -31,7 +31,7 @@ export function ListInputSave({name, id, label, placeholder, className, data}: {
 			<div className="flex gap-1 pt-1">
 				{
 					list.map((el, i) =>
-						<div key={i} className="flex gap-2 bg-[#C4C4C4] w-[fit-content] h-[fit-content] rounded-full px-3 text-white">
+						<div key={i} className="flex font-semibold gap-2 bg-[#797979] w-[fit-content] h-[fit-content] rounded-full px-3 text-white">
 							{el}
 							<button onClick={() => {
 								setList(list.filter(v => v !== el));
