@@ -1,5 +1,5 @@
 import React, { CSSProperties } from "react";
-import { IconEllipsis } from "../../../components/Icons/IconEllipsis";
+import { IconEllipsis } from "components/Icons/IconEllipsis";
 import { Link } from "react-router-dom";
 
 type ColorScheme = { bg: string, text: string };

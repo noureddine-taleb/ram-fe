@@ -1,5 +1,5 @@
 import React from "react";
-import { IconEye } from "../../../components/Icons/IconEye";
+import { IconEye } from "components/Icons/IconEye";
 
 export function Table({head, data}: {head: string[], data: string[][]})
 {

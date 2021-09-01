@@ -1,11 +1,11 @@
 import { Link, useLocation } from "react-router-dom";
-import { IconElearn } from "../Icons/IconElearn";
-import { IconHome } from "../Icons/IconHome";
-import { IconLogout } from "../Icons/IconLogout";
-import { IconInstructor } from "../Icons/IconInstructor";
-import { IconStudent } from "../Icons/IconStudent";
-import { IconUsers } from "../Icons/IconUsers";
-import { urlMatches } from "../../helpers/url";
+import { IconElearn } from "components/Icons/IconElearn";
+import { IconHome } from "components/Icons/IconHome";
+import { IconLogout } from "components/Icons/IconLogout";
+import { IconInstructor } from "components/Icons/IconInstructor";
+import { IconStudent } from "components/Icons/IconStudent";
+import { IconUsers } from "components/Icons/IconUsers";
+import { urlMatches } from "helpers/url";
 
 export function NavBar()
 {

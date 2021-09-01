@@ -1,12 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { IconEye } from "../../components/Icons/IconEye";
-import { IconPencil } from "../../components/Icons/IconPencil";
-import { IconPlus } from "../../components/Icons/IconPlus";
-import { IconPreference } from "../../components/Icons/IconPreference";
-import { IconSearch } from "../../components/Icons/IconSearch";
-import { interns } from "../../mocks/data";
-import { Pagination } from "./components/Pagination";
+import { IconEye } from "components/Icons/IconEye";
+import { IconPencil } from "components/Icons/IconPencil";
+import { IconPlus } from "components/Icons/IconPlus";
+import { IconPreference } from "components/Icons/IconPreference";
+import { IconSearch } from "components/Icons/IconSearch";
+import { dummyTable } from "mocks/data";
+import { Pagination } from "components/Pagination";
+import { ValidateButton } from "components/ValidateButton";
+import { ButtonIcon } from "components/ButtonIcon";
 
 export function Interns() {
 	return (
@@ -34,28 +36,28 @@ export function Interns() {
 						<thead className="border-b-[1px] border-[#7D001C]">
 							<tr className="font-bold text-sm leading-5 text-[#7D001C]">
 								{
-									interns.head.map((h, i) => <th key={i} className="h-14">{h}</th>)
+									dummyTable.head.map((h, i) => <th key={i} className="h-14">{h}</th>)
 								}
-								{
-									<th className="h-14">Action</th>
-								}
+								<th className="h-14">Validité de Passeport</th>
+								<th className="h-14">Action</th>
 							</tr>
 						</thead>
 						<tbody className="font-normal text-xs not-italic text-center">
 							{
-								interns.data.map((r, i) =>
+								dummyTable.data.map((r, i) =>
 									<tr key={i}>
 										{r.map((d, i) => <td key={i}>{d}</td>)}
-										{
-											<td className="flex justify-center my-3 gap-1">
-												<button className="w-[28px] h-[28px] bg-[#2AD4B9] text-white rounded-md flex items-center justify-center px-1" >
-													<IconEye />
-												</button>
-												<button className="w-[28px] h-[28px] bg-[#FDBC64] text-white rounded-md flex items-center justify-center px-1" >
-													<IconPencil className="w-[13px] h-[13px]" />
-												</button>
-											</td>
-										}
+										<td>
+											<ValidateButton/>
+										</td>
+										<td className="flex justify-center my-3 gap-1">
+											<ButtonIcon className="bg-[#2AD4B9]">
+												<IconEye />
+											</ButtonIcon>
+											<ButtonIcon className="bg-[#FDBC64]">
+												<IconPencil className="w-[13px] h-[13px]"/>
+											</ButtonIcon>
+										</td>
 									</tr>
 								)
 							}
@@ -65,7 +67,7 @@ export function Interns() {
 			</div>
 			<div className="flex">
 				<div className="ml-auto">
-					<Pagination/>
+					<Pagination />
 				</div>
 			</div>
 		</div>

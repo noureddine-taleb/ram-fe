@@ -1,15 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { IconDiploma } from "../../components/Icons/IconDiploma";
-import { IconDiplomaStack } from "../../components/Icons/IconDiplomaStack";
-import { IconPencil } from "../../components/Icons/IconPencil";
-import { IconPlus } from "../../components/Icons/IconPlus";
-import { IconPreference } from "../../components/Icons/IconPreference";
-import { IconReview } from "../../components/Icons/IconReview";
-import { IconSearch } from "../../components/Icons/IconSearch";
-import { trainings } from "../../mocks/data";
-import { Pagination } from "../Intern/components/Pagination";
+import { IconDiploma } from "components/Icons/IconDiploma";
+import { IconDiplomaStack } from "components/Icons/IconDiplomaStack";
+import { IconPencil } from "components/Icons/IconPencil";
+import { IconPreference } from "components/Icons/IconPreference";
+import { IconReview } from "components/Icons/IconReview";
+import { IconSearch } from "components/Icons/IconSearch";
+import { dummyTable } from "mocks/data";
+import { Pagination } from "components/Pagination";
 import { NavCard } from "./components/NavCard";
+import { ButtonIcon } from "components/ButtonIcon";
+import { Link } from "react-router-dom";
 
 export function Cours()
 {
@@ -38,28 +38,28 @@ export function Cours()
 					<thead className="border-b-[1px] border-[#7D001C]">
 						<tr className="font-bold text-sm leading-5 text-[#7D001C]">
 							{
-								trainings.head.map((h, i) => <th key={i} className="h-14">{h}</th>)
+								dummyTable.head.map((h, i) => <th key={i} className="h-14">{h}</th>)
 							}
-							{
-								<th className="h-14">Action</th>
-							}
+							<th className="h-14">Action</th>
 						</tr>
 					</thead>
 					<tbody className="font-normal text-xs not-italic text-center">
 						{
-							trainings.data.map((r, i) =>
+							dummyTable.data.map((r, i) =>
 								<tr key={i}>
 									{r.map((d, i) => <td key={i}>{d}</td>)}
-									{
 										<td className="flex justify-center my-3 gap-1">
-											<button className="w-[28px] h-[28px] bg-[#FDBC64] text-white rounded-md flex items-center justify-center px-1" >
-												<IconPencil className="w-[13px] h-[13px]" />
-											</button>
-											<button className="w-[28px] h-[28px] bg-[#8986DB] text-white rounded-md flex items-center justify-center px-1" >
-												<IconReview className="w-[13px] h-[13px]" />
-											</button>
+											<Link to="/dashboard/formation/cours/planification-cours">
+												<ButtonIcon className="bg-[#FDBC64]" >
+													<IconPencil className="w-[13px] h-[13px]" />
+												</ButtonIcon>
+											</Link>
+											<Link to="/dashboard/formation/cours/notation">
+												<ButtonIcon className="bg-[#8986DB]" >
+													<IconReview className="w-[13px] h-[13px]" />
+												</ButtonIcon>
+											</Link>
 										</td>
-									}
 								</tr>
 							)
 						}

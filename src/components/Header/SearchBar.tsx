@@ -1,4 +1,4 @@
-import { IconSearch } from "../Icons/IconSearch";
+import { IconSearch } from "components/Icons/IconSearch";
 
 export function SearchBar()
 {

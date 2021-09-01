@@ -1,6 +1,6 @@
 import React from "react";
-import { Button } from "./components/Button";
-import { Header } from "./components/Header";
+import { Button } from "components/Button";
+import { Header } from "components/Header";
 import { PersonalInfoLower } from "./components/PersonalInfoLower";
 import { PersonalInfoMiddle } from "./components/PersonalInfoMiddle";
 import { PersonalInfoUpper } from "./components/PersonalInfoUpper";
