@@ -20,7 +20,9 @@ export function NavBar()
 
 	return (
 		<div className="w-1/5 h-full flex items-center flex-col bg-[#FFFCFC]">
-			<img src="/ram.png" alt="ram" className="w-32 h-20 my-5"/>
+			<Link to="/">
+				<img src="/ram.png" alt="ram" className="w-32 h-20 my-5"/>
+			</Link>
 				<ul className="w-full">
 						{
 							navElems.map((el, i) => 
