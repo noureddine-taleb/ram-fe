@@ -1,7 +1,7 @@
 import React from "react";
 import { IconDropDown } from "components/Icons/IconDropDown";
 
-export function ListInput({name, id, label, placeholder, className, data}: {name: string, id: string, label: string, placeholder: string, className?: string, data: { value: string, label: string }[] }) {
+export function ListInput({ name, id, label, placeholder, className, data }: { name: string, id: string, label: string, placeholder: string, className?: string, data: { value: string, label: string }[] }) {
 	return (
 		<div className={`flex flex-col ${className}`}>
 			<label className="text-[#525F7F] font-bold text-sm pb-1" htmlFor={name}>{label}</label>
@@ -12,8 +12,8 @@ export function ListInput({name, id, label, placeholder, className, data}: {name
 				<select className="pl-2 w-full bg-white hover:outline-none shadow-md rounded appearance-none h-8 text-xs" id={id} name={name} placeholder={placeholder}>
 					{
 						data.map((option, i) => (
-								<option key={i} value={option.value}>{option.label}</option>
-							)
+							<option key={i} value={option.value}>{option.label}</option>
+						)
 						)
 					}
 				</select>

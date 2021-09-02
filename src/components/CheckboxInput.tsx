@@ -1,4 +1,4 @@
-export function CheckboxInput({name, ids, label, values, className}: {name: string, ids: string[], label: string, values: string[], className?: string}) {
+export function CheckboxInput({ name, ids, label, values, className }: { name: string, ids: string[], label: string, values: string[], className?: string }) {
 	return (
 		<div className={`flex flex-col ${className}`}>
 			<label className="text-[#525F7F] font-bold text-sm pb-1" htmlFor={name}>{label}</label>

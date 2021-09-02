@@ -10,41 +10,40 @@ import { StatCard } from "./components/StatCard";
 import { Table } from "./components/Table";
 import { TrainingCard } from "./components/TrainingCard";
 
-export function Dashboard()
-{
+export function Dashboard() {
 	return (
 		<div>
 			<div className="flex justify-between">
 				<StatCard url="/dashboard/stagiaire" title="Stagiaire" icon={<IconStudent />}
-						count={92} scheme={{ bg: "bg-purple-500 bg-opacity-[10%]", text: "text-purple-800" }}></StatCard>
+					count={92} scheme={{ bg: "bg-purple-500 bg-opacity-[10%]", text: "text-purple-800" }}></StatCard>
 				<StatCard url="/dashboard/instructeur" title="Instructeur" icon={<IconInstructor />}
-						count={23} scheme={{ bg: "bg-green-500 bg-opacity-[10%]", text: "text-green-400" }}></StatCard>
+					count={23} scheme={{ bg: "bg-green-500 bg-opacity-[10%]", text: "text-green-400" }}></StatCard>
 				<StatCard url="/dashboard/formation" title="Formation" icon={<IconElearn />}
-						count={33} scheme={{ bg: "bg-yellow-500 bg-opacity-[10%]", text: "text-yellow-400" }}></StatCard>
+					count={33} scheme={{ bg: "bg-yellow-500 bg-opacity-[10%]", text: "text-yellow-400" }}></StatCard>
 			</div>
-			
-			<SectionTitle title="Derniers Formations"/>
+
+			<SectionTitle title="Derniers Formations" />
 			<div className="flex justify-between">
 				{
 					lastTrainings.map((tr, i) => <TrainingCard key={i} {...tr}></TrainingCard>)
 				}
-				<ShowMoreTrainings/>
+				<ShowMoreTrainings />
 			</div>
 
 			<div className="flex justify-between">
 				<div className="w-[49%]">
 					<div className="flex justify-between">
-						<SectionTitle title="Derniers Stagiaires créés"/>
-						<ShowMoreActivities/>
+						<SectionTitle title="Derniers Stagiaires créés" />
+						<ShowMoreActivities />
 					</div>
-					<Table { ...lastCreatedInterns }/>
+					<Table {...lastCreatedInterns} />
 				</div>
 				<div className="w-[49%]">
 					<div className="flex justify-between">
-						<SectionTitle title="Derniers Instructeurs créés"/>
-						<ShowMoreActivities/>
+						<SectionTitle title="Derniers Instructeurs créés" />
+						<ShowMoreActivities />
 					</div>
-					<Table { ...lastCreatedInterns }/>
+					<Table {...lastCreatedInterns} />
 				</div>
 			</div>
 		</div>

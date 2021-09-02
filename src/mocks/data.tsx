@@ -7,10 +7,11 @@ export const lastTrainings = [
 ]
 
 export const lastCreatedInterns = {
-		head: ["Nom & Prenom", "Fonction", "Matricule"], data: [
+	head: ["Nom & Prenom", "Fonction", "Matricule"], data: [
 		["lorem ipsum", "lorem ipsum", "lorem ipsum"],
 		["lorem ipsum", "lorem ipsum", "lorem ipsum"]
-]};
+	]
+};
 
 export const dummyTable = {
 	head: [

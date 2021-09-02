@@ -3,8 +3,7 @@ import { DashboardLayout } from 'layouts/DashboardLayout';
 import { DashboardRoutes } from 'views/Dashboard/routes';
 import { Main } from 'views/Main/Main';
 
-export function Routes()
-{
+export function Routes() {
 	return useRoutes([
 		{
 			path: "/",
@@ -12,7 +11,7 @@ export function Routes()
 		},
 		{
 			path: '/dashboard',
-			element: <DashboardLayout/>,
+			element: <DashboardLayout />,
 			children: DashboardRoutes
 		},
 	])

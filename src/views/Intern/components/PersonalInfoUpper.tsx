@@ -8,8 +8,7 @@ import { TextArea } from "components/TextArea";
 import { TextInput } from "components/TextInput";
 import { UploadImg } from "./UploadImg";
 
-export function PersonalInfoUpper()
-{
+export function PersonalInfoUpper() {
 	return (
 		<div className="flex flex-col px-10 py-5 bg-[#F7FAFC] mb-5 rounded-b-lg shadow-md">
 			<div className="flex gap-5 w-full">

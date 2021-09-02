@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { IconDropDown } from "components/Icons/IconDropDown";
 
-export function ListInputSave({name, id, label, placeholder, className, data}: {name: string, id: string, label: string, placeholder: string, className?: string, data: { value: string, label: string }[] }) {
+export function ListInputSave({ name, id, label, placeholder, className, data }: { name: string, id: string, label: string, placeholder: string, className?: string, data: { value: string, label: string }[] }) {
 	const [list, setList] = useState<string[]>(["test"]);
 	const inputRef = useRef<HTMLSelectElement>(null);
 
@@ -13,17 +13,16 @@ export function ListInputSave({name, id, label, placeholder, className, data}: {
 					<IconDropDown></IconDropDown>
 				</div>
 
-				<select ref={inputRef} onChange={ _ => {
-					if (inputRef.current?.value && !list.includes(inputRef.current?.value))
-					{
+				<select ref={inputRef} onChange={_ => {
+					if (inputRef.current?.value && !list.includes(inputRef.current?.value)) {
 						list.push(inputRef.current?.value)
 						setList(list.slice(0));
 					}
-					}} className="pl-2 w-full bg-white hover:outline-none shadow-md rounded appearance-none h-8 text-xs" id={id} name={name} placeholder={placeholder}>
+				}} className="pl-2 w-full bg-white hover:outline-none shadow-md rounded appearance-none h-8 text-xs" id={id} name={name} placeholder={placeholder}>
 					{
 						data.map((option, i) => (
-								<option key={i} value={option.value}>{option.label}</option>
-							)
+							<option key={i} value={option.value}>{option.label}</option>
+						)
 						)
 					}
 				</select>

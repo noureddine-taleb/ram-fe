@@ -2,8 +2,7 @@ import { IconInstructor } from "components/Icons/IconInstructor";
 import { IconStudent } from "components/Icons/IconStudent";
 import { Card } from "./components/Card";
 
-export function Main()
-{
+export function Main() {
 	return (
 		<div className="w-screen h-screen bg-[#E5E5E5] flex flex-col justify-center items-center gap-y-20">
 			<img className="" src="/ram.png" />
@@ -15,8 +14,8 @@ export function Main()
 					<IconInstructor className="" />
 				</Card>
 			</div>
-			
-			
+
+
 		</div>
 	)
 }

@@ -3,10 +3,9 @@ import { IconEllipsis } from "components/Icons/IconEllipsis";
 import { Link } from "react-router-dom";
 
 type ColorScheme = { bg: string, text: string };
-type StatCardProps = {icon: JSX.Element, title: string, count: number, scheme: ColorScheme, url: string};
+type StatCardProps = { icon: JSX.Element, title: string, count: number, scheme: ColorScheme, url: string };
 
-export function StatCard({icon, title, count, scheme, url}: StatCardProps)
-{
+export function StatCard({ icon, title, count, scheme, url }: StatCardProps) {
 	return (
 		<Link to={url}>
 			<div className="bg-white rounded-lg h-40 w-[450px] shadow-2xl" style={{ "--tw-shadow": "0 25px 50px -12px rgb(255 255 255);" } as CSSProperties}>

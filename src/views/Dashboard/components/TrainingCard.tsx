@@ -3,8 +3,7 @@ import { IconArrow } from "components/Icons/IconArrow";
 import { IconOnlineLearn } from "components/Icons/IconOnlineLearn";
 
 export type Training = { title: string, location: string, time: string };
-export function TrainingCard(props: Training)
-{
+export function TrainingCard(props: Training) {
 	return (
 		<div className="w-[232px] h-[173px] flex flex-col">
 			<div className="flex w-full h-2/3 justify-between bg-[#FCEFEF] rounded-t-lg px-[10px] pt-3 text-white flex-wrap">
@@ -19,5 +18,5 @@ export function TrainingCard(props: Training)
 				<IconArrow className="h-4 text-[#2AE7C8]"></IconArrow>
 			</div>
 		</div>
-		);
+	);
 }

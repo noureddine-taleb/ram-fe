@@ -11,8 +11,7 @@ import { Pagination } from "components/Pagination";
 import { ValidateButton } from "components/ValidateButton";
 import { dummyTable } from "mocks/data";
 
-export function Users()
-{
+export function Users() {
 	return (
 		<div>
 			<div className="rounded-lg overflow-hidden">
@@ -50,17 +49,17 @@ export function Users()
 									<tr key={i}>
 										{r.map((d, i) => <td key={i}>{d}</td>)}
 										<td>
-											<ValidateButton/>
+											<ValidateButton />
 										</td>
 										<td className="flex justify-center my-3 gap-1">
 											<ButtonIcon className="bg-[#2AD4B9]">
 												<IconEye />
 											</ButtonIcon>
 											<ButtonIcon className="bg-[#FDBC64]">
-												<IconPencil className="w-[13px] h-[13px]"/>
+												<IconPencil className="w-[13px] h-[13px]" />
 											</ButtonIcon>
 											<ButtonIcon className="bg-[#1F6AC2]">
-												<IconTraget className="w-[22px] h-[22px]"/>
+												<IconTraget className="w-[22px] h-[22px]" />
 											</ButtonIcon>
 										</td>
 									</tr>
@@ -72,7 +71,7 @@ export function Users()
 			</div>
 			<div className="flex">
 				<div className="ml-auto">
-					<Pagination/>
+					<Pagination />
 				</div>
 			</div>
 		</div>

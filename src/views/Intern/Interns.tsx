@@ -48,14 +48,14 @@ export function Interns() {
 									<tr key={i}>
 										{r.map((d, i) => <td key={i}>{d}</td>)}
 										<td>
-											<ValidateButton/>
+											<ValidateButton />
 										</td>
 										<td className="flex justify-center my-3 gap-1">
 											<ButtonIcon className="bg-[#2AD4B9]">
 												<IconEye />
 											</ButtonIcon>
 											<ButtonIcon className="bg-[#FDBC64]">
-												<IconPencil className="w-[13px] h-[13px]"/>
+												<IconPencil className="w-[13px] h-[13px]" />
 											</ButtonIcon>
 										</td>
 									</tr>

@@ -2,10 +2,9 @@ import { Link, useLocation } from "react-router-dom";
 import { removeTrailingSlash } from "helpers/url";
 
 type ColorScheme = { bg: string, text: string };
-type StatCardProps = {icon: JSX.Element, title: string, scheme: ColorScheme, url: string};
+type StatCardProps = { icon: JSX.Element, title: string, scheme: ColorScheme, url: string };
 
-function getWidth(currentLocation: string, url: string)
-{
+function getWidth(currentLocation: string, url: string) {
 	url = removeTrailingSlash(url);
 	currentLocation = removeTrailingSlash(currentLocation);
 	if (currentLocation === url)
@@ -13,18 +12,16 @@ function getWidth(currentLocation: string, url: string)
 	return "w-64";
 }
 
-function getHeight(currentLocation: string, url: string)
-{
+function getHeight(currentLocation: string, url: string) {
 	url = removeTrailingSlash(url);
 	currentLocation = removeTrailingSlash(currentLocation);
-	
+
 	if (currentLocation === url)
 		return "h-36";
 	return "h-[116px]";
 }
 
-export function NavCard({icon, title, scheme, url}: StatCardProps)
-{
+export function NavCard({ icon, title, scheme, url }: StatCardProps) {
 	const currentLocation = useLocation().pathname;
 
 	return (

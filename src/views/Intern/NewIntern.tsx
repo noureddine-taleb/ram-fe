@@ -5,12 +5,11 @@ import { PersonalInfoLower } from "./components/PersonalInfoLower";
 import { PersonalInfoMiddle } from "./components/PersonalInfoMiddle";
 import { PersonalInfoUpper } from "./components/PersonalInfoUpper";
 
-export function NewIntern()
-{
+export function NewIntern() {
 	return (
 		<div className="flex flex-col">
 			<div className="rounded-lg px-2">
-				<Header title="Information Personnelles"/>
+				<Header title="Information Personnelles" />
 				<PersonalInfoUpper></PersonalInfoUpper>
 				<PersonalInfoMiddle></PersonalInfoMiddle>
 				<PersonalInfoLower></PersonalInfoLower>

@@ -10,17 +10,16 @@ import { NumberInput } from "components/NumberInput";
 import { TextInput } from "components/TextInput";
 import { CheckBox } from "./components/CheckBox";
 
-export function CoursPlan()
-{
+export function CoursPlan() {
 	return (
 		<div className="flex flex-col">
 			<div className="rounded-lg px-2">
-				<Header title="Information du Cours"/>
+				<Header title="Information du Cours" />
 				<div className="flex flex-col px-10 py-5 bg-[#F7FAFC] mb-5 rounded-b-lg shadow-md">
 					<div className="flex flex-wrap gap-5 w-full">
 						<div className="flex w-full justify-between gap-x-6">
-								<TextInput className="w-full" id="f1c" name="f1c" label="Formation" placeholder="ipsum"></TextInput>
-								<TextInput className="w-full" id="f2" name="f2" label="Instructeur" placeholder="ipsum"></TextInput>
+							<TextInput className="w-full" id="f1c" name="f1c" label="Formation" placeholder="ipsum"></TextInput>
+							<TextInput className="w-full" id="f2" name="f2" label="Instructeur" placeholder="ipsum"></TextInput>
 						</div>
 						<div className="flex w-full justify-between gap-x-6">
 							<ListInput className="w-full" id="f4" name="f4" label="Examinateur" placeholder="ipsum" data={dataList}></ListInput>
@@ -45,7 +44,7 @@ export function CoursPlan()
 							Charger une Photo
 						</Button>
 					</div>
-				</div>				
+				</div>
 				<Button className="w-full h-14 bg-[#D7FCF6] text-[#2AD4B9] border border-[#2AE7C8]">
 					Valider
 				</Button>
