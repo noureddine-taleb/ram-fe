@@ -1,7 +1,7 @@
 import React from "react";
 import { IconPreference } from "components/Icons/IconPreference";
 import { IconSearch } from "components/Icons/IconSearch";
-import { dummyTable } from "mocks/data";
+import { instructorTrainingsTable } from "mocks/data";
 import { Pagination } from "components/Pagination";
 import { ButtonIcon } from "components/ButtonIcon";
 import { IconDoc } from "components/Icons/IconDoc";
@@ -30,15 +30,13 @@ export function Trainings() {
 						<thead className="border-b-[1px] border-[#7D001C]">
 							<tr className="font-bold text-sm leading-5 text-[#7D001C]">
 								{
-									dummyTable.head.map((h, i) => <th key={i} className="h-14">{h}</th>)
+									instructorTrainingsTable.head.map((h, i) => <th key={i} className="h-14">{h}</th>)
 								}
-								<th className="h-14">Stagiaires</th>
-								<th className="h-14">Pièce Jointe</th>
 							</tr>
 						</thead>
 						<tbody className="font-normal text-xs not-italic text-center">
 							{
-								dummyTable.data.map((r, i) =>
+								instructorTrainingsTable.data.map((r, i) =>
 									<tr key={i}>
 										{r.map((d, i) => <td key={i}>{d}</td>)}
 										<td>

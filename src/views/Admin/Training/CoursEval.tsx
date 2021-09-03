@@ -2,7 +2,7 @@ import React from "react";
 import { ButtonIcon } from "components/ButtonIcon";
 import { IconBracket } from "components/Icons/IconBracket";
 import { IconSearch } from "components/Icons/IconSearch";
-import { dummyTable } from "mocks/data";
+import { dummyTable, internEmbedTable } from "mocks/data";
 import { Button } from "components/Button";
 import { DateInput } from "components/DateInput";
 import { Header } from "components/Header";
@@ -42,13 +42,13 @@ export function CoursEval() {
 										<thead className="border-b-[1px] border-[#7D001C]">
 											<tr className="font-bold text-sm leading-5 text-[#7D001C]">
 												{
-													dummyTable.head.map((h, i) => <th key={i} className="h-14">{h}</th>)
+													internEmbedTable.head.map((h, i) => <th key={i} className="h-14">{h}</th>)
 												}
 											</tr>
 										</thead>
 										<tbody className="font-normal text-xs not-italic text-center">
 											{
-												dummyTable.data.map((r, i) =>
+												internEmbedTable.data.map((r, i) =>
 													<tr key={i}>
 														{r.map((d, i) => <td key={i}>{d}</td>)}
 														<td className="flex justify-center my-3 gap-1">

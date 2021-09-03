@@ -8,7 +8,7 @@ import { IconPreference } from "components/Icons/IconPreference";
 import { IconSearch } from "components/Icons/IconSearch";
 import { Pagination } from "components/Pagination";
 import { ValidateButton } from "components/ValidateButton";
-import { dummyTable } from "mocks/data";
+import { dummyTable, instructorTable } from "mocks/data";
 import { IconBooking } from "components/Icons/IconBooking";
 import { AddNew } from "components/AddNew";
 
@@ -33,15 +33,13 @@ export function Instructors() {
 						<thead className="border-b-[1px] border-[#7D001C]">
 							<tr className="font-bold text-sm leading-5 text-[#7D001C]">
 								{
-									dummyTable.head.map((h, i) => <th key={i} className="h-14">{h}</th>)
+									instructorTable.head.map((h, i) => <th key={i} className="h-14">{h}</th>)
 								}
-								<th className="h-14">Validité de Passeport</th>
-								<th className="h-14">Action</th>
 							</tr>
 						</thead>
 						<tbody className="font-normal text-xs not-italic text-center">
 							{
-								dummyTable.data.map((r, i) =>
+								instructorTable.data.map((r, i) =>
 									<tr key={i}>
 										{r.map((d, i) => <td key={i}>{d}</td>)}
 										<td>

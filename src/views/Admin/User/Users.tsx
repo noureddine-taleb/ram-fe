@@ -9,7 +9,7 @@ import { IconSearch } from "components/Icons/IconSearch";
 import { IconTraget } from "components/Icons/IconTarget";
 import { Pagination } from "components/Pagination";
 import { ValidateButton } from "components/ValidateButton";
-import { dummyTable } from "mocks/data";
+import { dummyTable, userTable } from "mocks/data";
 
 export function Users() {
 	return (
@@ -37,15 +37,13 @@ export function Users() {
 						<thead className="border-b-[1px] border-[#7D001C]">
 							<tr className="font-bold text-sm leading-5 text-[#7D001C]">
 								{
-									dummyTable.head.map((h, i) => <th key={i} className="h-14">{h}</th>)
+									userTable.head.map((h, i) => <th key={i} className="h-14">{h}</th>)
 								}
-								<th className="h-14">Validité de Passeport</th>
-								<th className="h-14">Action</th>
 							</tr>
 						</thead>
 						<tbody className="font-normal text-xs not-italic text-center">
 							{
-								dummyTable.data.map((r, i) =>
+								userTable.data.map((r, i) =>
 									<tr key={i}>
 										{r.map((d, i) => <td key={i}>{d}</td>)}
 										<td>
