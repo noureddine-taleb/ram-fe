@@ -16,18 +16,18 @@ export function CoursEval() {
 				<Header title="Information du Cours" />
 				<div className="flex flex-col px-10 py-5 bg-[#F7FAFC] mb-5 rounded-b-lg shadow-md">
 					<div className="flex flex-wrap gap-5 w-full">
-						<div className="flex w-full justify-between gap-x-6">
+						<div className="flex w-full justify-between gap-6 flex-wrap sm:flex-nowrap">
 							<TextInput className="w-full" id="f1c" name="f1c" label="Formation" placeholder="ipsum"></TextInput>
 							<TextInput className="w-full" id="f2" name="f2" label="Instructeur" placeholder="ipsum"></TextInput>
 							<TextInput className="w-full" id="f2" name="f2" label="Lieu" placeholder="ipsum"></TextInput>
 						</div>
-						<div className="flex w-full justify-between gap-x-6">
+						<div className="flex w-full justify-between gap-6 flex-wrap sm:flex-nowrap">
 							<DateInput className="w-full" id="f3" name="f3" label="Date Réalisation" placeholder="ipsum"></DateInput>
 							<DateInput className="w-full" id="f3" name="f3" label="Date de Controle" placeholder="ipsum"></DateInput>
 							<TextInput className="w-full" id="f2" name="f2" label="Durée" placeholder="ipsum"></TextInput>
 						</div>
 					</div>
-					<div className="flex mt-7 gap-x-4 h-[390px]">
+					<div className="flex mt-7 gap-4 min-h-[390px] flex-wrap xl:flex-nowrap">
 						<div className="flex flex-col w-full h-full max-h-full">
 							<Header title="Stagiaires" />
 							<div className="flex flex-col px-10 py-5 bg-[#F7FAFC] mb-5 rounded-b-lg shadow-md h-full">
@@ -37,7 +37,7 @@ export function CoursEval() {
 										<IconSearch className="w-6 h-6" ></IconSearch>
 									</button>
 								</div>
-								<div className="h-52 overflow-auto w-[592px]">
+								<div className="h-52 overflow-auto max-w-[592px]">
 									<table className="table-auto w-full">
 										<thead className="border-b-[1px] border-[#7D001C]">
 											<tr className="font-bold text-sm leading-5 text-[#7D001C]">
@@ -66,7 +66,7 @@ export function CoursEval() {
 						</div>
 						<div className="flex flex-col w-full h-full">
 							<Header title="Fiche de Synthése" />
-							<div className="flex flex-col px-10 py-5 bg-[#F7FAFC] mb-5 rounded-b-lg shadow-md gap-y-4">
+							<div className="flex flex-col px-10 py-5 bg-[#F7FAFC] mb-5 rounded-b-lg shadow-md gap-4">
 								<TextInput className="w-full" id="f1c" name="f1c" label="Note" placeholder="ipsum"></TextInput>
 								<TextArea className="w-full h-32" id="f8" name="f8" label="Description" placeholder="ipsum"></TextArea>
 								<Button className="w-full h-14 bg-[#D7FCF6] text-[#2AD4B9] border border-[#2AE7C8]">

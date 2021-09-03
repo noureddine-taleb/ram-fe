@@ -1,9 +1,9 @@
 import React from "react";
-import { Dashboard } from "./Dashboard";
-import { InstructorRoutes } from "views/Instructor/routes";
-import { InternRoutes } from "views/Intern/routes";
-import { TrainingRoutes } from "views/Training/routes";
-import { UserRoutes } from "views/User/routes";
+import { Dashboard } from "./Dashboard/Dashboard";
+import { InstructorRoutes } from "views/Admin/Instructor/routes";
+import { InternRoutes } from "views/Admin/Intern/routes";
+import { TrainingRoutes } from "views/Admin/Training/routes";
+import { UserRoutes } from "views/Admin/User/routes";
 
 export const DashboardRoutes = [
 	{ path: '/', element: <Dashboard /> },

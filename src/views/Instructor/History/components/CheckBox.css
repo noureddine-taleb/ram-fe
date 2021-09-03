@@ -1,0 +1,15 @@
+input:checked ~ .dot {
+	transform: translateX(300%);
+}
+
+input:checked ~ .bar {
+    background-color: rgba(16, 185, 129, 1);
+}
+
+input:checked ~ .bar::after {
+	content: 'Oui';
+}
+
+input:checked ~ .bar > span {
+	display: none;
+}
