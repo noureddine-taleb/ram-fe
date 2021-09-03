@@ -14,13 +14,13 @@ import { Link } from "react-router-dom";
 export function Cours() {
 	return (
 		<div className="flex flex-col gap-y-4">
-			<div className="flex justify-center gap-3 items-center">
+			<div className="flex justify-center md:flex-row flex-col gap-3 items-center">
 				<NavCard url="/dashboard/formation" title="Liste des Formations" icon={<IconDiploma />}
 					scheme={{ bg: "bg-[#F6F5FF]", text: "text-purple-800" }}></NavCard>
 				<NavCard url="/dashboard/formation/cours" title="Liste des Cours" icon={<IconDiplomaStack />}
 					scheme={{ bg: "bg-[#F5FFFC]", text: "text-[#2AD4B9]" }}></NavCard>
 			</div>
-			<div className="rounded-lg overflow-hidden shadow-xl">
+			<div className="rounded-lg min-w-[800px] overflow-auto shadow-xl">
 				<div className="w-full h-24 bg-white flex items-center justify-end px-3">
 					<div className="flex gap-1">
 						<input className="hover:outline-none border border-[#929292] border-opacity-50 appearance-none rounded pl-5 placeholder-[#929292]" placeholder="Recherche" type="text" />

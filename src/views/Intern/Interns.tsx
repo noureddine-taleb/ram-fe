@@ -12,7 +12,7 @@ import { ButtonIcon } from "components/ButtonIcon";
 
 export function Interns() {
 	return (
-		<div>
+		<div className="min-w-[800px] overflow-auto">
 			<div className="rounded-lg overflow-hidden">
 				<div className="w-full h-24 bg-white flex items-center justify-between px-3">
 					<Link to="/dashboard/stagiaire/ajouter-stagiaire">

@@ -14,7 +14,7 @@ import { AddNew } from "components/AddNew";
 
 export function Instructors() {
 	return (
-		<div>
+		<div className="min-w-[800px] overflow-auto">
 			<div className="rounded-lg overflow-hidden">
 				<div className="w-full h-24 bg-white flex items-center justify-between px-3">
 					<AddNew label="Ajouter un instructeur" link="/dashboard/instructeur/ajouter-instructeur"></AddNew>

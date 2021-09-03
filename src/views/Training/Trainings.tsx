@@ -14,13 +14,13 @@ import { ButtonIcon } from "components/ButtonIcon";
 export function Trainings() {
 	return (
 		<div className="flex flex-col gap-y-4">
-			<div className="flex justify-center gap-3 items-center">
+			<div className="flex md:flex-row flex-col justify-center gap-3 items-center">
 				<NavCard url="/dashboard/formation" title="Liste des Formations" icon={<IconDiploma />}
 					scheme={{ bg: "bg-[#F6F5FF]", text: "text-purple-800" }}></NavCard>
 				<NavCard url="/dashboard/formation/cours" title="Liste des Cours" icon={<IconDiplomaStack />}
 					scheme={{ bg: "bg-[#F5FFFC]", text: "text-[#2AD4B9]" }}></NavCard>
 			</div>
-			<div className="rounded-lg overflow-hidden shadow-xl">
+			<div className="rounded-lg shadow-xl min-w-[800px] overflow-auto">
 				<div className="w-full h-24 bg-white flex items-center justify-between px-3">
 					<Link to="/dashboard/formation/ajouter-formation">
 						<button className="bg-[#2AD4B9] flex rounded-lg w-72 h-11 items-center justify-center px-3 text-white font-bold text-base">
