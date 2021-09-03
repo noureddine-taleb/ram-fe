@@ -9,7 +9,7 @@ import { NavElement } from "interfaces/NavElement";
 export function Header({ list }: { list: NavElement[] }) {
 	const currentLoc = useLocation().pathname;
 	return (
-		<div className="bg-red w-full lg:w-4/5 h-[25%] bg-gradient-to-r from-[#f0405c] to-[#c20831] text-white flex flex-col pt-5 relative">
+		<header className="bg-red w-full lg:w-4/5 h-[25%] bg-gradient-to-r from-[#f0405c] to-[#c20831] text-white flex flex-col pt-5 relative">
 			<MobileMenu list={list} className="top-[72px] lg:hidden" />
 			<div className="ml-4 font-sans text-lg">
 				{getHeader(currentLoc)}
@@ -20,6 +20,6 @@ export function Header({ list }: { list: NavElement[] }) {
 				<span>|</span>
 				<ProfileImg />
 			</div>
-		</div>
+		</header>
 	);
 }

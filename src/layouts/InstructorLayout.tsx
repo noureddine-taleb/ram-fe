@@ -9,9 +9,9 @@ export function InstructorLayout() {
 		<div className="app flex flex-col flex-wrap w-full">
 			<NavBar list={navInstructorElems} />
 			<Header list={navInstructorElems} />
-			<div className="relative px-[1%] top-[-30px] h-[75%] overflow-y-auto w-full lg:w-4/5">
+			<main className="relative px-[1%] top-[-30px] h-[75%] overflow-y-auto w-full lg:w-4/5">
 				<Outlet />
-			</div>
+			</main>
 		</div>
 	);
 }

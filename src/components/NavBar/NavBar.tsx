@@ -7,7 +7,7 @@ export function NavBar({ list }: { list: NavElement[] }) {
 	const currentLoc = useLocation().pathname;
 
 	return (
-		<div className="w-1/5 h-full items-center flex-col bg-[#FFFCFC] hidden lg:flex">
+		<nav className="w-1/5 h-full items-center flex-col bg-[#FFFCFC] hidden lg:flex">
 			<Link to="/">
 				<img src="/ram.png" alt="ram" className="w-32 h-20 my-5" />
 			</Link>
@@ -27,6 +27,6 @@ export function NavBar({ list }: { list: NavElement[] }) {
 				}
 			</ul>
 			<button className="w-[170px] h-[40px] mt-auto mb-10 bg-gradient-to-r from-[#f0405c] to-[#c20831] text-white rounded flex items-center justify-around"><IconLogout className="text-gray w-[19px] h-[22px]" />Se Deconnecter</button>
-		</div>
+		</nav>
 	)
 }
