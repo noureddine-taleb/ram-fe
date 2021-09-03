@@ -1,7 +1,7 @@
 export function ProfileImg() {
 	return (
 		<div className="flex gap-2 items-center">
-			<div className="flex flex-col">
+			<div className="flex-col hidden sm:flex">
 				<span>User Name</span>
 				<span>Role</span>
 			</div>

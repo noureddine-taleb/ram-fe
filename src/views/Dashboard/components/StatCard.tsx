@@ -8,7 +8,7 @@ type StatCardProps = { icon: JSX.Element, title: string, count: number, scheme: 
 export function StatCard({ icon, title, count, scheme, url }: StatCardProps) {
 	return (
 		<Link to={url}>
-			<div className="bg-white rounded-lg h-40 w-[450px] shadow-2xl" style={{ "--tw-shadow": "0 25px 50px -12px rgb(255 255 255);" } as CSSProperties}>
+			<div className="bg-white rounded-lg w-72 sm:w-96 h-36 shadow-2xl">
 				<div className={`${scheme.bg} flex flex-wrap p-4 w-full h-full rounded-lg`}>
 					<div className="flex flex-col w-1/2 justify-between">
 						<span className={`${scheme.text} text-4xl font-semibold w-14 h-14`}>

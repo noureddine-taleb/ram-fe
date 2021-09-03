@@ -13,7 +13,7 @@ import { TrainingCard } from "./components/TrainingCard";
 export function Dashboard() {
 	return (
 		<div>
-			<div className="flex justify-between">
+			<div className="flex 2xl:justify-between justify-center flex-wrap w-full gap-5">
 				<StatCard url="/dashboard/stagiaire" title="Stagiaire" icon={<IconStudent />}
 					count={92} scheme={{ bg: "bg-purple-500 bg-opacity-[10%]", text: "text-purple-800" }}></StatCard>
 				<StatCard url="/dashboard/instructeur" title="Instructeur" icon={<IconInstructor />}
@@ -23,23 +23,23 @@ export function Dashboard() {
 			</div>
 
 			<SectionTitle title="Derniers Formations" />
-			<div className="flex justify-between">
+			<div className="flex flex-wrap gap-5 justify-around w-[97vw] lg:w-[77vw]">
 				{
 					lastTrainings.map((tr, i) => <TrainingCard key={i} {...tr}></TrainingCard>)
 				}
 				<ShowMoreTrainings />
 			</div>
 
-			<div className="flex justify-between">
-				<div className="w-[49%]">
-					<div className="flex justify-between">
+			<div className="w-full flex justify-between flex-col lg:flex-row">
+				<div className="w-full lg:w-[49%]">
+					<div className="flex justify-between flex-wrap">
 						<SectionTitle title="Derniers Stagiaires créés" />
 						<ShowMoreActivities />
 					</div>
 					<Table {...lastCreatedInterns} />
 				</div>
-				<div className="w-[49%]">
-					<div className="flex justify-between">
+				<div className="w-full lg:w-[49%]">
+					<div className="flex justify-between flex-wrap">
 						<SectionTitle title="Derniers Instructeurs créés" />
 						<ShowMoreActivities />
 					</div>

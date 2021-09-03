@@ -1,3 +1,9 @@
+import { IconElearn } from "components/Icons/IconElearn";
+import { IconHome } from "components/Icons/IconHome";
+import { IconInstructor } from "components/Icons/IconInstructor";
+import { IconStudent } from "components/Icons/IconStudent";
+import { IconUsers } from "components/Icons/IconUsers";
+
 export const lastTrainings = [
 	{ title: "Formation 01", location: "Casablanca", time: "6h" },
 	{ title: "Formation 02", location: "Rabat", time: "4h" },
@@ -40,4 +46,12 @@ export const dataList = [
 	{ value: "lorem2", label: "lorem2" },
 	{ value: "lorem3", label: "lorem3" },
 	{ value: "lorem4", label: "lorem4" },
+];
+
+export const navElems: { icon: any, label: string, link: string }[] = [
+	{ icon: IconHome, label: "Dashboard", link: "/dashboard" },
+	{ icon: IconStudent, label: "Stagiaire", link: "/dashboard/stagiaire" },
+	{ icon: IconElearn, label: "Formation", link: "/dashboard/formation" },
+	{ icon: IconInstructor, label: "Instructeur", link: "/dashboard/instructeur" },
+	{ icon: IconUsers, label: "Utilisateur", link: "/dashboard/utilisateur" },
 ];
