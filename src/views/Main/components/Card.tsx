@@ -7,12 +7,12 @@ type StatCardProps = { children: JSX.Element, title: string, scheme: ColorScheme
 export function Card({ children, title, scheme, url }: StatCardProps) {
 	return (
 		<Link to={url}>
-			<div className={`${scheme.bg} flex rounded-lg h-[237px] w-[529px] shadow-2xl justify-between items-center px-10`}>
+			<div className={`${scheme.bg} flex rounded-lg w-72 h-36 md:h-[237px] md:w-[529px] shadow-2xl justify-between items-center px-10`}>
 				<div className="flex items-center">
 					<div className={`w-24 h-24 pr-5 ${scheme.text}`}>
 						{children}
 					</div>
-					<div className="font-bold text-[#505887] text-[27px]">
+					<div className="font-bold text-[#505887] md:text-[27px]">
 						{title}
 					</div>
 				</div>

@@ -6,7 +6,7 @@ export function Main() {
 	return (
 		<div className="w-screen h-screen bg-[#E5E5E5] flex flex-col justify-center items-center gap-y-20">
 			<img src="/ram.png" />
-			<div className="flex justify-center items-center gap-x-10">
+			<div className="flex flex-col xl:flex-row justify-center items-center gap-10">
 				<Card url="/dashboard" title="ADMIN" scheme={{ bg: "bg-[#F6F5FF]", text: "text-[#3734A9]" }}>
 					<IconStudent />
 				</Card>
